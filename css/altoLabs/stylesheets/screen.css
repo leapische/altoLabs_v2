@@ -68,7 +68,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /*@import "../foundation/components/interchange";*/
-/* line 17, ../sass/screen.scss */
+/* line 20, ../sass/screen.scss */
+body {
+  background-color: #edeee3;
+}
+
+/* line 23, ../sass/screen.scss */
 .main {
   width: 100%;
   height: 100%;
@@ -80,7 +85,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   		background-position: right center;
   	}*/
 }
-/* line 29, ../sass/screen.scss */
+/* line 34, ../sass/screen.scss */
 .main .mainText {
   position: relative;
   top: 50%;
@@ -88,11 +93,48 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-/* line 32, ../sass/screen.scss */
+/* line 37, ../sass/screen.scss */
 .main .mainText .mainTitle {
   font-family: 'Playfair Display', serif;
   font-weight: 400;
   font-style: italic;
-  font-size: 1.875em;
+  font-size: 1.5em;
+  color: #797567;
+  margin-bottom: 1.5rem;
+}
+/* line 45, ../sass/screen.scss */
+.main .mainText strike {
+  color: #e25b97;
+}
+/* line 48, ../sass/screen.scss */
+.main .mainText .tagLine {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 3.5em;
   color: #595548;
+  margin-bottom: 3.4rem;
+}
+/* line 56, ../sass/screen.scss */
+.main .mainText .actionButton {
+  background-color: #e25b97;
+  color: #edeee3;
+  font-size: 1em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* line 66, ../sass/screen.scss */
+.section2 {
+  font-size: 1em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #595548;
+  padding: 5rem;
+  line-height: 1.5em;
+}
+/* line 73, ../sass/screen.scss */
+.section2 span {
+  color: #e25b97;
 }
