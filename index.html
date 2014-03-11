@@ -18,19 +18,64 @@
   </head>
 
   <body>  
+    <!-- First Panel -->
     <div class="main">
-      <!-- <img data-interchange="[img/background.png, (default)]"> -->
       <div class="mainText text-center">
-        <strike><h1 class="mainTitle">We are a creative digital agency...</h1></strike>
+        <strike>
+          <h1 class="mainTitle">We are a creative digital agency...</h1>
+        </strike>
+
         <p class="tagLine">Yeah, we can do that</p>
+
         <a href="#" class="button medium text-center radius actionButton">start a project</a>
       </div>
     </div>
+
+    <!-- Second Panel -->
     <div class="section2 text-center">
-      We are Alto Labs. We help companies develop their <br> 
-      brands and build <span>beautiful websites.</span>
-      <p>scroll down</p>
-      <img src="">
+
+      <div class="section2Text small-centered medium-5 small-10 columns">
+        We are Alto Labs. We help companies develop their brands and build <span>beautiful websites.</span>
+      </div>
+
+      <p class="text-center">scroll down</p>
+
+      <!-- Double Arrows Down -->
+      <div class="arrowContainer">
+        <div class="arrow arrow-down">
+        </div>
+      </div>
+      <div class="bottomArrowContainer">
+        <div class="arrow arrow-down">
+        </div>
+      </div>
+    </div>
+
+    <!-- RO Work -->
+    <!-- RO Work Intro -->
+    <div class="row">
+      <div class="workIntro medium-4 columns small-centered text-center">
+        <img class="logo" src="img/ro-logo.png" alt="">
+        <p class="workTitle">RUNORDER</p>
+        <hr/>
+        <p class="ourRole">Our Role:</p>
+        <p class="ourRoleDetail">Design, Branding, Concept, Development</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="workScreenShots medium-10 columns small-centered text-center">
+        <ul class="workScreenShots" data-orbit>
+          <li>
+            <img src="img/screen-1.png" alt="slide 1" />
+          </li>
+          <li>
+            <img src="img/screen-2.png" alt="slide 2" />
+          </li>
+          <li>
+            <img src="img/screen-3.png" alt="slide 3" />
+          </li>
+        </ul>
+      </div>
     </div>
 
 
@@ -39,7 +84,13 @@
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
     <script>
-      $(document).foundation();
+      $(document).foundation({
+      orbit: {
+        navigation_arrows: true,
+        slide_number: false,
+        bullets: false, // Does the slider have bullets visible?
+      }
+    });
     </script>
   </body>
 </html>

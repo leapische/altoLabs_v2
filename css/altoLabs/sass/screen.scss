@@ -5,6 +5,19 @@
 
 @import "compass/reset";
 /*@import "../foundation/components/interchange";*/
+html { 
+	font-size: 1em;
+
+	@media only screen and (max-width: 40em){
+		font-size: .8em;
+	}
+}
+
+@font-face{
+	font-family: 'Gotham';
+	src: url('../../../fonts/GothamRnd-Light.otf');
+}
+
 
 @mixin vertical-align {
   position: relative;
@@ -27,6 +40,7 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: right center;
+	padding: 1rem;
 
 /*	@media only screen and (max-width: 40em){
 		background-position: right center;
@@ -52,6 +66,10 @@ body {
 			font-size: 3.5em;
 			color: $altoBrown;
 			margin-bottom: 3.4rem;
+			@media only screen and (max-width: 40em){
+				margin-bottom: 1.5rem;
+			}
+
 		}
 		.actionButton {
 			background-color: $altoPink;
@@ -68,11 +86,91 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   color: $altoBrown;
-  padding: 5rem;
   line-height: 1.5em;
-  span {
-  	color: $altoPink;
-  }
+  
+  .section2Text{
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+	
+  	span {
+	  	color: $altoPink;
+	  	font-size: 1em;
+
+	  }
+	} 
+}
+
+
+
+.bottomArrowContainer, .arrowContainer{
+	width:100%;
+}
+
+.bottomArrowContainer{
+	margin-top: -1.1rem;
+}
+.arrow {
+	display:inline-block;
+  position: relative;
+  padding: .4rem; /* Arrow size */
+          box-shadow: 1px -1px 0 1px plum inset;
+  -webkit-box-shadow: 2px -2px plum inset;
+  border: solid transparent;
+  border-width: 0 0 0rem 0rem;
+  transition: 0.2s;
+  margin: 0 auto;
+}
+
+.arrow-down  { 
+	transform:rotate(-45deg); 
+	-webkit-transform:rotate(-45deg);
+	-moz-transform:rotate(-45deg);
+	-o-transform:rotate(-45deg); 
+}
+
+.workIntro{
+	margin-top: 2rem;
+
+	.logo {
+		width: 8%;
+		@media only screen and (max-width: 40em){
+				width: 10%;
+			}
+	}
+
+	.workTitle{
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 400; 
+		font-size: 1.25em;
+		color: $altoBrown;
+		margin-top: .5rem;
+	}
+	hr{
+		
+		width: 10%;
+		border: solid $altoBrown;
+		border-width: 2px 0 0;
+		margin: 1rem auto 0rem;
+
+	}
+	.ourRole{
+		font-family: 'Playfair Display', serif;
+		font-weight: 400;
+		font-style: italic;
+		font-size: 1em;
+		color: $altoBrown;
+		margin-top: 1rem;
+	}
+	.ourRoleDetail{
+		font-family: 'Gotham';
+		color: $altoBrown;
+		margin-top: 1rem;
+		font-size: .75em;
+	}
+}
+
+.workScreenShots{
+	margin-top: 2.5rem;
 }
 	
 
