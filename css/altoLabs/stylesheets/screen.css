@@ -249,3 +249,73 @@ body {
 .workScreenShots {
   margin-top: 2.5rem;
 }
+
+/* line 177, ../sass/screen.scss */
+.orbit-container {
+  overflow: visible !important;
+}
+
+/* line 180, ../sass/screen.scss */
+.orbit-slides-container {
+  overflow: hidden !important;
+}
+
+/* line 185, ../sass/screen.scss */
+.orbit-container .orbit-prev span,
+.orbit-container .orbit-next span {
+  color: red;
+  border: none;
+  font-size: 70px;
+  text-indent: 0;
+  margin-top: -32px;
+}
+
+/* line 193, ../sass/screen.scss */
+.orbit-container .orbit-prev {
+  background-color: transparent;
+  margin-left: -50px;
+}
+
+/* line 197, ../sass/screen.scss */
+.orbit-container .orbit-prev span:before {
+  content: "";
+  display: block;
+  position: relative;
+  padding: .4rem;
+  /* Arrow size */
+  box-shadow: 1px -1px 0 1px plum inset;
+  -webkit-box-shadow: 2px -2px plum inset;
+  border: solid transparent;
+  border-width: 0 0 0rem 0rem;
+  transition: 0.2s;
+  margin: 0 auto;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+
+/* line 213, ../sass/screen.scss */
+.orbit-container .orbit-next {
+  background-color: transparent;
+  margin-right: -50px;
+}
+
+/* line 217, ../sass/screen.scss */
+.orbit-container .orbit-next span:before {
+  content: "";
+  display: block;
+  position: relative;
+  padding: .4rem;
+  /* Arrow size */
+  box-shadow: 1px -1px 0 1px plum inset;
+  -webkit-box-shadow: 2px -2px plum inset;
+  border: solid transparent;
+  border-width: 0 0 0rem 0rem;
+  transition: 0.2s;
+  margin: 0 auto;
+  transform: rotate(225deg);
+  -webkit-transform: rotate(225deg);
+  -moz-transform: rotate(225deg);
+  -o-transform: rotate(225deg);
+}

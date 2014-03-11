@@ -172,5 +172,64 @@ body {
 .workScreenShots{
 	margin-top: 2.5rem;
 }
+
+// Customize the left and right arrows of the screenshot slider
+.orbit-container {
+    overflow: visible !important;
+}
+.orbit-slides-container {
+    overflow: hidden !important;    
+}
+
+.orbit-container .orbit-prev span,
+.orbit-container .orbit-next span {
+    color: red;
+    border: none;
+    font-size: 70px;
+    text-indent: 0;
+    margin-top: -32px;
+}
+
+.orbit-container .orbit-prev {
+    background-color: transparent;
+    margin-left: -50px;
+}
+.orbit-container .orbit-prev span:before {
+    content: "";
+    display: block;
+	  position: relative;
+	  padding: .4rem; /* Arrow size */
+	          box-shadow: 1px -1px 0 1px plum inset;
+	  -webkit-box-shadow: 2px -2px plum inset;
+	  border: solid transparent;
+	  border-width: 0 0 0rem 0rem;
+	  transition: 0.2s;
+	  margin: 0 auto;
+	  transform:rotate(45deg); 
+	-webkit-transform:rotate(45deg);
+	-moz-transform:rotate(45deg);
+	-o-transform:rotate(45deg);
+}
+.orbit-container .orbit-next {
+    background-color: transparent;
+    margin-right: -50px;
+}
+.orbit-container .orbit-next span:before {
+    content: "";
+    display: block;
+	  position: relative;
+	  padding: .4rem; /* Arrow size */
+	          box-shadow: 1px -1px 0 1px plum inset;
+	  -webkit-box-shadow: 2px -2px plum inset;
+	  border: solid transparent;
+	  border-width: 0 0 0rem 0rem;
+	  transition: 0.2s;
+	  margin: 0 auto;
+	  transform:rotate(225deg); 
+		-webkit-transform:rotate(225deg);
+		-moz-transform:rotate(225deg);
+		-o-transform:rotate(225deg);
+}
 	
+
 
