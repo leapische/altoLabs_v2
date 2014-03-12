@@ -84,12 +84,12 @@ html {
   src: url("../../../fonts/GothamRnd-Light.otf");
 }
 
-/* line 33, ../sass/screen.scss */
+/* line 40, ../sass/screen.scss */
 body {
   background-color: #edeee3;
 }
 
-/* line 36, ../sass/screen.scss */
+/* line 43, ../sass/screen.scss */
 .main {
   width: 100%;
   height: 100%;
@@ -98,11 +98,8 @@ body {
   background-size: cover;
   background-position: right center;
   padding: 1rem;
-  /*	@media only screen and (max-width: 40em){
-  		background-position: right center;
-  	}*/
 }
-/* line 48, ../sass/screen.scss */
+/* line 52, ../sass/screen.scss */
 .main .mainText {
   position: relative;
   top: 50%;
@@ -110,7 +107,7 @@ body {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-/* line 51, ../sass/screen.scss */
+/* line 55, ../sass/screen.scss */
 .main .mainText .mainTitle {
   font-family: 'Playfair Display', serif;
   font-weight: 400;
@@ -119,11 +116,11 @@ body {
   color: #797567;
   margin-bottom: 1.5rem;
 }
-/* line 59, ../sass/screen.scss */
+/* line 61, ../sass/screen.scss */
 .main .mainText strike {
   color: #e25b97;
 }
-/* line 62, ../sass/screen.scss */
+/* line 64, ../sass/screen.scss */
 .main .mainText .tagLine {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
@@ -133,12 +130,12 @@ body {
   margin-bottom: 3.4rem;
 }
 @media only screen and (max-width: 40em) {
-  /* line 62, ../sass/screen.scss */
+  /* line 64, ../sass/screen.scss */
   .main .mainText .tagLine {
     margin-bottom: 1.5rem;
   }
 }
-/* line 74, ../sass/screen.scss */
+/* line 76, ../sass/screen.scss */
 .main .mainText .actionButton {
   background-color: #e25b97;
   color: #edeee3;
@@ -148,7 +145,7 @@ body {
   text-transform: uppercase;
 }
 
-/* line 84, ../sass/screen.scss */
+/* line 86, ../sass/screen.scss */
 .section2 {
   font-size: 1em;
   font-family: 'Montserrat', sans-serif;
@@ -156,33 +153,33 @@ body {
   color: #595548;
   line-height: 1.5em;
 }
-/* line 91, ../sass/screen.scss */
+/* line 93, ../sass/screen.scss */
 .section2 .section2Text {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
-/* line 95, ../sass/screen.scss */
+/* line 97, ../sass/screen.scss */
 .section2 .section2Text span {
   color: #e25b97;
   font-size: 1em;
 }
 
-/* line 105, ../sass/screen.scss */
+/* line 107, ../sass/screen.scss */
 .bottomArrowContainer, .arrowContainer {
   width: 100%;
 }
 
-/* line 109, ../sass/screen.scss */
+/* line 111, ../sass/screen.scss */
 .arrowContainer {
   margin-top: -.5rem;
 }
 
-/* line 113, ../sass/screen.scss */
+/* line 115, ../sass/screen.scss */
 .bottomArrowContainer {
   margin-top: -1.1rem;
 }
 
-/* line 117, ../sass/screen.scss */
+/* line 119, ../sass/screen.scss */
 .arrowText {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
@@ -192,7 +189,7 @@ body {
   font-style: italic;
 }
 
-/* line 126, ../sass/screen.scss */
+/* line 128, ../sass/screen.scss */
 .arrow {
   display: inline-block;
   position: relative;
@@ -206,7 +203,7 @@ body {
   margin: 0 auto;
 }
 
-/* line 138, ../sass/screen.scss */
+/* line 140, ../sass/screen.scss */
 .arrow-down {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
@@ -214,22 +211,22 @@ body {
   -o-transform: rotate(-45deg);
 }
 
-/* line 145, ../sass/screen.scss */
+/* line 147, ../sass/screen.scss */
 .workIntro {
   margin-top: 2rem;
 }
-/* line 148, ../sass/screen.scss */
+/* line 150, ../sass/screen.scss */
 .workIntro .logo {
   width: 8%;
 }
 @media only screen and (max-width: 40em) {
-  /* line 148, ../sass/screen.scss */
+  /* line 150, ../sass/screen.scss */
   .workIntro .logo {
     width: 10%;
   }
 }
 
-/* line 156, ../sass/screen.scss */
+/* line 158, ../sass/screen.scss */
 .workTitle {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
@@ -238,7 +235,7 @@ body {
   margin-top: .5rem;
 }
 
-/* line 164, ../sass/screen.scss */
+/* line 166, ../sass/screen.scss */
 hr {
   width: 10%;
   border: solid #595548;
@@ -246,7 +243,7 @@ hr {
   margin: 1rem auto 0rem;
 }
 
-/* line 172, ../sass/screen.scss */
+/* line 174, ../sass/screen.scss */
 .ourRole {
   font-family: 'Playfair Display', serif;
   font-weight: 400;

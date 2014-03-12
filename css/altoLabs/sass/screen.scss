@@ -27,11 +27,18 @@ html {
   transform: translateY(-50%);
 }
 
+@mixin playfair_ital{
+	font-family: 'Playfair Display', serif;
+	font-weight: 400;
+	font-style: italic;
+}
+
 $altoPink : rgb( 226, 91, 151 );
 $altoBrown : rgb( 89, 85, 72 );
+$altoCream: rgb( 237, 238, 227 );
 
 body {
-	background-color: rgb( 237, 238, 227 );
+	background-color: $altoCream;
 }
 .main{
 	width: 100%;
@@ -42,19 +49,14 @@ body {
 	background-position: right center;
 	padding: 1rem;
 
-/*	@media only screen and (max-width: 40em){
-		background-position: right center;
-	}*/
 	.mainText {
 		@include vertical-align;
 
 		.mainTitle {
-			font-family: 'Playfair Display', serif;
-			font-weight: 400;
-			font-style: italic;
+			@include playfair_ital;
 			font-size: 1.5em;
-  			color: rgb( 121, 117, 103 );
-  			margin-bottom: 1.5rem;
+			color: rgb( 121, 117, 103 );
+			margin-bottom: 1.5rem;
 		}
 		strike {
 			color: $altoPink;
@@ -73,7 +75,7 @@ body {
 		}
 		.actionButton {
 			background-color: $altoPink;
-			color: rgb( 237, 238, 227 );
+			color: $altoCream;
 			font-size: 1em;
 	  		font-family: 'Montserrat', sans-serif;
 	  		font-weight: 700;
@@ -170,9 +172,7 @@ hr{
 
 }
 .ourRole{
-	font-family: 'Playfair Display', serif;
-	font-weight: 400;
-	font-style: italic;
+	@include playfair_ital;
 	font-size: 1em;
 	color: $altoBrown;
 	margin-top: 1rem;
@@ -277,7 +277,7 @@ margin: 0 auto;
 	padding: 1rem;
 	// This hr is the same as the one above just different color
 	hr{
-		border: solid rgb( 237, 238, 227 );
+		border: solid $altoCream;
 		width: 10%;
 		border-width: 2px 0 0;
 		margin: 1rem auto 0rem;
@@ -291,20 +291,20 @@ margin: 0 auto;
 		}
 	}
 	.workTitle{
-		color: rgb( 237, 238, 227 );
+		color: $altoCream;
 		letter-spacing: 1px;
 	}
 	.arrowText{
 		margin-top: 3rem;
-		color: rgb( 237, 238, 227 );
+		color: $altoCream;
 		letter-spacing: 1px;
 	}
 	.arrowSuperContainer{
 		margin-top: 1rem;
 	}
 	.arrow{
-		box-shadow: 1px -1px 0 1px rgb( 237, 238, 227 ) inset;
-	  -webkit-box-shadow: 2px -2px rgb( 237, 238, 227 ) inset;
+		box-shadow: 1px -1px 0 1px $altoCream inset;
+	  -webkit-box-shadow: 2px -2px $altoCream inset;
 	}
 	.bottomArrowContainer{
 		margin-top: -1.4rem;
@@ -334,7 +334,7 @@ margin: 0 auto;
 	}
 	.actionButton{
 		background-color: $altoPink;
-		color: rgb( 237, 238, 227 );
+		color: $altoCream;
 		font-size: 1em;
 		font-family: 'Montserrat', sans-serif;
 		font-weight: 700;
