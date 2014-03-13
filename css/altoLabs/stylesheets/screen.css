@@ -452,20 +452,22 @@ hr {
 
 /* line 347, ../sass/screen.scss */
 .main {
-  position: relative;
-  z-index: 3;
+  position: fixed;
+  z-index: 96;
+  top: 0px;
 }
 
-/* line 352, ../sass/screen.scss */
+/* line 353, ../sass/screen.scss */
 section {
   margin-bottom: 350px;
+  margin-top: 56%;
   position: relative;
-  z-index: 2;
+  z-index: 98;
   background-color: #edeee3;
   padding-top: 1rem;
 }
 
-/* line 360, ../sass/screen.scss */
+/* line 362, ../sass/screen.scss */
 .contactUs {
   position: fixed;
   bottom: 0;

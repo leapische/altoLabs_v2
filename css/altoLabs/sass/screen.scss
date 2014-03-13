@@ -345,14 +345,16 @@ margin: 0 auto;
 }
 
 .main{
-	position: relative;
-	z-index: 3;
+	position: fixed;
+	z-index: 96;
+	top: 0px;
 }
 
 section{
 	margin-bottom: 350px;
+	margin-top:56%;
   position: relative;
-  z-index: 2;
+  z-index: 98;
   background-color: $altoCream;
   padding-top: 1rem;
 }

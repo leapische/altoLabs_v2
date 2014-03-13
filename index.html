@@ -199,6 +199,31 @@
   
     
     <script src="js/vendor/jquery.js"></script>
+
+    <!-- Parallax Curtain effect -->
+    <script src="js/waypoints.js"></script>
+    <script>
+    $('.section2').waypoint(function(direction) {
+      if (direction === "down") {
+        console.log("I'm going down");
+        $('.main').css({
+          'position': 'absolute',
+        });
+        $('.contactUs').css({
+          'z-index': '97',
+          'position': 'fixed',
+        });
+      }
+      else{
+        $('.main').css({
+          'position': 'fixed',
+        });
+        $('.contactUs').css({
+          'z-index': '1',
+        });
+      }
+    });
+    </script>
     <script src="js/foundation.min.js"></script>
     <script>
       $(document).foundation({
