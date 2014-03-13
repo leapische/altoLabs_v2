@@ -449,3 +449,28 @@ hr {
   text-transform: uppercase;
   margin-top: 3rem;
 }
+
+/* line 347, ../sass/screen.scss */
+.main {
+  position: relative;
+  z-index: 3;
+}
+
+/* line 352, ../sass/screen.scss */
+section {
+  margin-bottom: 350px;
+  position: relative;
+  z-index: 2;
+  background-color: #edeee3;
+  padding-top: 1rem;
+}
+
+/* line 360, ../sass/screen.scss */
+.contactUs {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 350px;
+  z-index: 1;
+}
