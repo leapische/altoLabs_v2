@@ -40,6 +40,183 @@ $altoCream: rgb( 237, 238, 227 );
 body {
 	background-color: $altoCream;
 }
+
+// Animated Cross Menu
+
+#menu{
+  position: fixed;
+  z-index: 1000000000000;
+}
+
+.si-icons {
+  vertical-align: top !important;
+  position: relative;
+  // Top has to be a negative number because fullpage.js imposes a vertical-align middle onto the div
+  top: 3%;
+  right: 7%;
+  display: block;
+  z-index: 1000000000000;
+
+  @media screen and (max-height: 30.5em) {
+  	top: 0%;
+  	right: 15%;
+  }
+
+  // @media #{$iphone} {
+  //   top: -45%;
+  //   right: 20%;
+  // }
+
+}
+.si-icons span {
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  margin: 40px 30px;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-top: 1rem;
+  margin-left: 92%;
+  position: relative;
+  z-index: 400001;
+}
+
+.si-icons-hover span {
+  width: 128px;
+  height: 128px;
+  margin: 50px 40px;
+}
+
+svg{
+  width: 70%;
+}
+/* Fallback for browsers that don't support SVG - Generated with http://iconizr.com/ */
+.no-svg .si-icon-hamburger, .no-svg .si-icon-hamburger-cross { background-image: url('img/hamburger.png') }
+
+// Menu Overlay
+
+/* Overlay style */
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: $altoPink;
+  font-family: times;
+  font-style: italic;
+}
+
+/* Overlay closing cross */
+.overlay .overlay-close {
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  // right: 7%;
+  top: 6%;
+  overflow: hidden;
+  border: none;
+  background: no-repeat center center;
+  text-indent: 200%;
+  color: transparent;
+  outline: none;
+  z-index: 1000000000000000000000;
+}
+
+/* Menu style */
+.overlay nav {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  height: 60%;
+  font-size: 54px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.overlay ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: inline-block;
+  height: 100%;
+  position: relative;
+  width:100%;
+  top: -10%;
+}
+
+.overlay ul li {
+  display: block;
+  height: 20%;
+  height: calc(100% / 5);
+  min-height: 54px;
+
+}
+
+.overlay ul li a {
+  font-weight: 300;
+  display: block;
+  color: #fff;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.overlay ul li a:hover,
+.overlay ul li a:focus {
+  color: #e3fcb1;
+}
+
+/* Effects */
+.overlay-hugeinc {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.5s, visibility 0s 0.5s;
+  transition: opacity 0.5s, visibility 0s 0.5s;
+}
+
+.overlay-hugeinc.open {
+  opacity: .75;
+  visibility: visible;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+  z-index: 4000;
+}
+
+.overlay-hugeinc nav {
+  -webkit-perspective: 1200px;
+  perspective: 1200px;
+}
+
+.overlay-hugeinc nav ul {
+  opacity: 0.4;
+  -webkit-transform: translateY(-25%) rotateX(35deg);
+  transform: translateY(-25%) rotateX(35deg);
+  -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.overlay-hugeinc.open nav ul {
+  opacity: 1;
+  -webkit-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+}
+
+.overlay-hugeinc.close nav ul {
+  -webkit-transform: translateY(25%) rotateX(-35deg);
+  transform: translateY(25%) rotateX(-35deg);
+}
+
+@media screen and (max-height: 30.5em) {
+  .overlay nav {
+    height: 70%;
+    font-size: 34px;
+  }
+  .overlay ul li {
+    min-height: 34px;
+  }
+}
+
 .main{
 	width: 100%;
 	height: 100%;
@@ -294,6 +471,13 @@ margin: 0 auto;
 		color: $altoCream;
 		letter-spacing: 1px;
 	}
+	.subheader{
+		margin-top: 1rem;
+		color: $altoCream;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 400;
+		letter-spacing: 1px;
+	}
 	.arrowText{
 		margin-top: 3rem;
 		color: $altoCream;
@@ -324,7 +508,7 @@ margin: 0 auto;
 
 .contactUs{
 	padding-top: 3rem;
-	padding-bottom: 3rem;
+	// padding-bottom: 3rem;
 	p{
 		margin-top: 3rem;
 		// margin-bottom: 1.5rem;
@@ -348,24 +532,37 @@ margin: 0 auto;
 	position: fixed;
 	z-index: 96;
 	top: 0px;
+	@media only screen and (max-width: 40em){
+  	position: relative;
+  	z-index: 0;
+  }
 }
 
 section{
 	margin-bottom: 350px;
-	margin-top:56%;
   position: relative;
   z-index: 98;
   background-color: $altoCream;
   padding-top: 1rem;
+  @media only screen and (max-width: 40em){
+  	margin-bottom: 0px;
+  	margin-top: 0px;
+  	z-index: 0;
+  }
 }
 
 .contactUs{
 	position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 350px;
-    z-index: 1;
+  bottom: 0;
+  // top:0;
+  left: 0;
+  right: 0;
+  height: 400px;
+  z-index: 1;
+  @media only screen and (max-width: 40em){
+  	position: relative;
+  	z-index: 0;
+  }
 }
 
 
