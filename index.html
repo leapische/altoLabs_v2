@@ -30,16 +30,16 @@
         <button type="button" class="overlay-close"></button>
         <nav>
           <ul id="">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a class="fuck" href="#contact" data-target="shit" onclick="return false">Contact</a></li>
+            <li><a class="menuItems" data-target="home" onclick="return false">Home</a></li>
+            <li><a class="menuItems" data-target="work" onclick="return false">Work</a></li>
+            <li><a class="menuItems" data-target="contact" onclick="return false">Contact</a></li>
           </ul>
         </nav>
       </div>
     </div>
 
     <!-- First Panel -->
-    <div class="main">
+    <div class="main" id="home">
       <div class="mainText text-center">
 
         <!-- Main Panel Text -->
@@ -74,7 +74,7 @@
       <!-- RO Work -->
   
       <!-- RO Work Intro -->
-      <div class="row">
+      <div class="row" id="work">
         <div class="workIntro medium-4 columns small-centered text-center">
           <img class="logo" src="img/ro-logo.png" alt="">
           <p class="workTitle">RUNORDER</p>
@@ -103,7 +103,7 @@
       <!-- Vetto Work -->
   
       <!-- Vetto Work Intro -->
-      <div class="row" id="vetto">
+      <div class="row">
         <div class="workIntro medium-4 columns small-centered text-center">
           <img class="logo" src="img/vetto-logo.png" alt="">
           <p class="workTitle">VETTO</p>
@@ -209,7 +209,7 @@
     </section>
 
     <!-- Get in Touch -->
-    <div class="contactUs row" id="shit">
+    <div class="contactUs row" id="contact">
       <div class="medium-6 columns small-centered text-center">
 
         <!-- Get in Touch Text -->
@@ -261,13 +261,28 @@
 
       // Anchor Points
 
-      $( '.fuck' ).on('click', function(event) {
+      $('.menuItems').on('click', function(event) {
         event.preventDefault();
+
+        $('.main').css({
+            'position': 'relative',
+            'z-index': '0'
+          });
+        $('section').css({
+          'margin-bottom': '0px',
+          'margin-top': '0px',
+          'z-index': '0',
+        })
+        $('.contactUs').css({
+          'position': 'relative',
+          'z-index': '0'
+        });
+
         var target = "#" + $(this).data('target');
         $('html, body').animate({
             scrollTop: $(target).offset().top
         }, 1000);
-        console.log("anchor points baby!")
+        $.waypoints('disable');
       });
 
     })

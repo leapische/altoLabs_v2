@@ -103,9 +103,10 @@ svg{
   height: 100%;
   top: 0;
   left: 0;
-  background: $altoPink;
-  font-family: times;
-  font-style: italic;
+  background: rgba( 226, 91, 151, .95 );
+  font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
 }
 
 /* Overlay closing cross */
@@ -176,7 +177,7 @@ svg{
 }
 
 .overlay-hugeinc.open {
-  opacity: .75;
+  opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;

@@ -153,13 +153,14 @@ svg {
   height: 100%;
   top: 0;
   left: 0;
-  background: #e25b97;
-  font-family: times;
-  font-style: italic;
+  background: rgba(226, 91, 151, 0.95);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
 /* Overlay closing cross */
-/* line 112, ../sass/screen.scss */
+/* line 113, ../sass/screen.scss */
 .overlay .overlay-close {
   width: 100%;
   height: 80px;
@@ -175,7 +176,7 @@ svg {
 }
 
 /* Menu style */
-/* line 128, ../sass/screen.scss */
+/* line 129, ../sass/screen.scss */
 .overlay nav {
   text-align: center;
   position: relative;
@@ -186,7 +187,7 @@ svg {
   transform: translateY(-50%);
 }
 
-/* line 138, ../sass/screen.scss */
+/* line 139, ../sass/screen.scss */
 .overlay ul {
   list-style: none;
   padding: 0;
@@ -198,7 +199,7 @@ svg {
   top: -10%;
 }
 
-/* line 149, ../sass/screen.scss */
+/* line 150, ../sass/screen.scss */
 .overlay ul li {
   display: block;
   height: 20%;
@@ -206,7 +207,7 @@ svg {
   min-height: 54px;
 }
 
-/* line 157, ../sass/screen.scss */
+/* line 158, ../sass/screen.scss */
 .overlay ul li a {
   font-weight: 300;
   display: block;
@@ -215,14 +216,14 @@ svg {
   transition: color 0.2s;
 }
 
-/* line 166, ../sass/screen.scss */
+/* line 167, ../sass/screen.scss */
 .overlay ul li a:hover,
 .overlay ul li a:focus {
   color: #e3fcb1;
 }
 
 /* Effects */
-/* line 171, ../sass/screen.scss */
+/* line 172, ../sass/screen.scss */
 .overlay-hugeinc {
   opacity: 0;
   visibility: hidden;
@@ -230,22 +231,22 @@ svg {
   transition: opacity 0.5s, visibility 0s 0.5s;
 }
 
-/* line 178, ../sass/screen.scss */
+/* line 179, ../sass/screen.scss */
 .overlay-hugeinc.open {
-  opacity: .75;
+  opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
   z-index: 4000;
 }
 
-/* line 186, ../sass/screen.scss */
+/* line 187, ../sass/screen.scss */
 .overlay-hugeinc nav {
   -webkit-perspective: 1200px;
   perspective: 1200px;
 }
 
-/* line 191, ../sass/screen.scss */
+/* line 192, ../sass/screen.scss */
 .overlay-hugeinc nav ul {
   opacity: 0.4;
   -webkit-transform: translateY(-25%) rotateX(35deg);
@@ -254,32 +255,32 @@ svg {
   transition: transform 0.5s, opacity 0.5s;
 }
 
-/* line 199, ../sass/screen.scss */
+/* line 200, ../sass/screen.scss */
 .overlay-hugeinc.open nav ul {
   opacity: 1;
   -webkit-transform: rotateX(0deg);
   transform: rotateX(0deg);
 }
 
-/* line 205, ../sass/screen.scss */
+/* line 206, ../sass/screen.scss */
 .overlay-hugeinc.close nav ul {
   -webkit-transform: translateY(25%) rotateX(-35deg);
   transform: translateY(25%) rotateX(-35deg);
 }
 
 @media screen and (max-height: 30.5em) {
-  /* line 211, ../sass/screen.scss */
+  /* line 212, ../sass/screen.scss */
   .overlay nav {
     height: 70%;
     font-size: 34px;
   }
 
-  /* line 215, ../sass/screen.scss */
+  /* line 216, ../sass/screen.scss */
   .overlay ul li {
     min-height: 34px;
   }
 }
-/* line 220, ../sass/screen.scss */
+/* line 221, ../sass/screen.scss */
 .main {
   width: 100%;
   height: 100%;
@@ -289,7 +290,7 @@ svg {
   background-position: right center;
   padding: 1rem;
 }
-/* line 229, ../sass/screen.scss */
+/* line 230, ../sass/screen.scss */
 .main .mainText {
   position: relative;
   top: 50%;
@@ -297,7 +298,7 @@ svg {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-/* line 232, ../sass/screen.scss */
+/* line 233, ../sass/screen.scss */
 .main .mainText .mainTitle {
   font-family: 'Playfair Display', serif;
   font-weight: 400;
@@ -306,11 +307,11 @@ svg {
   color: #797567;
   margin-bottom: 1.5rem;
 }
-/* line 238, ../sass/screen.scss */
+/* line 239, ../sass/screen.scss */
 .main .mainText strike {
   color: #e25b97;
 }
-/* line 241, ../sass/screen.scss */
+/* line 242, ../sass/screen.scss */
 .main .mainText .tagLine {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
@@ -320,12 +321,12 @@ svg {
   margin-bottom: 3.4rem;
 }
 @media only screen and (max-width: 40em) {
-  /* line 241, ../sass/screen.scss */
+  /* line 242, ../sass/screen.scss */
   .main .mainText .tagLine {
     margin-bottom: 1.5rem;
   }
 }
-/* line 253, ../sass/screen.scss */
+/* line 254, ../sass/screen.scss */
 .main .mainText .actionButton {
   background-color: #e25b97;
   color: #edeee3;
@@ -335,7 +336,7 @@ svg {
   text-transform: uppercase;
 }
 
-/* line 263, ../sass/screen.scss */
+/* line 264, ../sass/screen.scss */
 .section2 {
   font-size: 1em;
   font-family: 'Montserrat', sans-serif;
@@ -343,33 +344,33 @@ svg {
   color: #595548;
   line-height: 1.5em;
 }
-/* line 270, ../sass/screen.scss */
+/* line 271, ../sass/screen.scss */
 .section2 .section2Text {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
-/* line 274, ../sass/screen.scss */
+/* line 275, ../sass/screen.scss */
 .section2 .section2Text span {
   color: #e25b97;
   font-size: 1em;
 }
 
-/* line 284, ../sass/screen.scss */
+/* line 285, ../sass/screen.scss */
 .bottomArrowContainer, .arrowContainer {
   width: 100%;
 }
 
-/* line 288, ../sass/screen.scss */
+/* line 289, ../sass/screen.scss */
 .arrowContainer {
   margin-top: -.5rem;
 }
 
-/* line 292, ../sass/screen.scss */
+/* line 293, ../sass/screen.scss */
 .bottomArrowContainer {
   margin-top: -1.1rem;
 }
 
-/* line 296, ../sass/screen.scss */
+/* line 297, ../sass/screen.scss */
 .arrowText {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
@@ -379,7 +380,7 @@ svg {
   font-style: italic;
 }
 
-/* line 305, ../sass/screen.scss */
+/* line 306, ../sass/screen.scss */
 .arrow {
   display: inline-block;
   position: relative;
@@ -393,7 +394,7 @@ svg {
   margin: 0 auto;
 }
 
-/* line 317, ../sass/screen.scss */
+/* line 318, ../sass/screen.scss */
 .arrow-down {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
@@ -401,22 +402,22 @@ svg {
   -o-transform: rotate(-45deg);
 }
 
-/* line 324, ../sass/screen.scss */
+/* line 325, ../sass/screen.scss */
 .workIntro {
   margin-top: 2rem;
 }
-/* line 327, ../sass/screen.scss */
+/* line 328, ../sass/screen.scss */
 .workIntro .logo {
   width: 8%;
 }
 @media only screen and (max-width: 40em) {
-  /* line 327, ../sass/screen.scss */
+  /* line 328, ../sass/screen.scss */
   .workIntro .logo {
     width: 10%;
   }
 }
 
-/* line 335, ../sass/screen.scss */
+/* line 336, ../sass/screen.scss */
 .workTitle {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
@@ -425,7 +426,7 @@ svg {
   margin-top: .5rem;
 }
 
-/* line 343, ../sass/screen.scss */
+/* line 344, ../sass/screen.scss */
 hr {
   width: 10%;
   border: solid #595548;
@@ -433,7 +434,7 @@ hr {
   margin: 1rem auto 0rem;
 }
 
-/* line 351, ../sass/screen.scss */
+/* line 352, ../sass/screen.scss */
 .ourRole {
   font-family: 'Playfair Display', serif;
   font-weight: 400;
@@ -443,7 +444,7 @@ hr {
   margin-top: 1rem;
 }
 
-/* line 357, ../sass/screen.scss */
+/* line 358, ../sass/screen.scss */
 .ourRoleDetail {
   font-family: 'Gotham';
   color: #595548;
@@ -451,22 +452,22 @@ hr {
   font-size: .75em;
 }
 
-/* line 365, ../sass/screen.scss */
+/* line 366, ../sass/screen.scss */
 .workScreenShots {
   margin-top: 2.5rem;
 }
 
-/* line 370, ../sass/screen.scss */
+/* line 371, ../sass/screen.scss */
 .orbit-container {
   overflow: visible !important;
 }
 
-/* line 373, ../sass/screen.scss */
+/* line 374, ../sass/screen.scss */
 .orbit-slides-container {
   overflow: hidden !important;
 }
 
-/* line 378, ../sass/screen.scss */
+/* line 379, ../sass/screen.scss */
 .orbit-container .orbit-prev span,
 .orbit-container .orbit-next span {
   border: none;
@@ -475,23 +476,23 @@ hr {
   margin-top: -32px;
 }
 
-/* line 385, ../sass/screen.scss */
+/* line 386, ../sass/screen.scss */
 .orbit-container .orbit-prev {
   background-color: transparent;
   margin-left: -50px;
   top: 50%;
 }
-/* line 389, ../sass/screen.scss */
+/* line 390, ../sass/screen.scss */
 .orbit-container .orbit-prev:hover {
   background: transparent;
 }
-/* line 392, ../sass/screen.scss */
+/* line 393, ../sass/screen.scss */
 .orbit-container .orbit-prev span {
   margin-top: 0px;
   left: 40%;
 }
 
-/* line 397, ../sass/screen.scss */
+/* line 398, ../sass/screen.scss */
 .orbit-container .orbit-prev span:before {
   content: "";
   display: block;
@@ -510,23 +511,23 @@ hr {
   -o-transform: rotate(45deg);
 }
 
-/* line 413, ../sass/screen.scss */
+/* line 414, ../sass/screen.scss */
 .orbit-container .orbit-next {
   background-color: transparent;
   margin-right: -50px;
   top: 50%;
 }
-/* line 417, ../sass/screen.scss */
+/* line 418, ../sass/screen.scss */
 .orbit-container .orbit-next:hover {
   background: transparent;
 }
-/* line 420, ../sass/screen.scss */
+/* line 421, ../sass/screen.scss */
 .orbit-container .orbit-next span {
   margin-top: 0px;
   right: 40%;
 }
 
-/* line 425, ../sass/screen.scss */
+/* line 426, ../sass/screen.scss */
 .orbit-container .orbit-next span:before {
   content: "";
   display: block;
@@ -545,12 +546,12 @@ hr {
   -o-transform: rotate(225deg);
 }
 
-/* line 442, ../sass/screen.scss */
+/* line 443, ../sass/screen.scss */
 .orbit-slides-container img {
   margin: 0 auto;
 }
 
-/* line 446, ../sass/screen.scss */
+/* line 447, ../sass/screen.scss */
 .ourProcess {
   width: 100%;
   height: auto;
@@ -561,30 +562,30 @@ hr {
   margin-top: 3rem;
   padding: 1rem;
 }
-/* line 456, ../sass/screen.scss */
+/* line 457, ../sass/screen.scss */
 .ourProcess hr {
   border: solid #edeee3;
   width: 10%;
   border-width: 2px 0 0;
   margin: 1rem auto 0rem;
 }
-/* line 462, ../sass/screen.scss */
+/* line 463, ../sass/screen.scss */
 .ourProcess img {
   width: 8%;
   margin-top: 3rem;
 }
 @media only screen and (max-width: 40em) {
-  /* line 462, ../sass/screen.scss */
+  /* line 463, ../sass/screen.scss */
   .ourProcess img {
     width: 16%;
   }
 }
-/* line 470, ../sass/screen.scss */
+/* line 471, ../sass/screen.scss */
 .ourProcess .workTitle {
   color: #edeee3;
   letter-spacing: 1px;
 }
-/* line 474, ../sass/screen.scss */
+/* line 475, ../sass/screen.scss */
 .ourProcess .subheader {
   margin-top: 1rem;
   color: #edeee3;
@@ -592,51 +593,51 @@ hr {
   font-weight: 400;
   letter-spacing: 1px;
 }
-/* line 481, ../sass/screen.scss */
+/* line 482, ../sass/screen.scss */
 .ourProcess .arrowText {
   margin-top: 3rem;
   color: #edeee3;
   letter-spacing: 1px;
 }
-/* line 486, ../sass/screen.scss */
+/* line 487, ../sass/screen.scss */
 .ourProcess .arrowSuperContainer {
   margin-top: 1rem;
 }
-/* line 489, ../sass/screen.scss */
+/* line 490, ../sass/screen.scss */
 .ourProcess .arrow {
   box-shadow: 1px -1px 0 1px #edeee3 inset;
   -webkit-box-shadow: 2px -2px #edeee3 inset;
 }
-/* line 493, ../sass/screen.scss */
+/* line 494, ../sass/screen.scss */
 .ourProcess .bottomArrowContainer {
   margin-top: -1.4rem;
 }
 
-/* line 498, ../sass/screen.scss */
+/* line 499, ../sass/screen.scss */
 .featuredIn {
   padding-top: 3rem;
   padding-bottom: 3rem;
   background: white;
 }
-/* line 502, ../sass/screen.scss */
+/* line 503, ../sass/screen.scss */
 .featuredIn .prLogo {
   margin-top: 3rem;
   vertical-align: middle;
 }
 
-/* line 509, ../sass/screen.scss */
+/* line 510, ../sass/screen.scss */
 .contactUs {
   padding-top: 3rem;
 }
-/* line 512, ../sass/screen.scss */
+/* line 513, ../sass/screen.scss */
 .contactUs p {
   margin-top: 3rem;
 }
-/* line 516, ../sass/screen.scss */
+/* line 517, ../sass/screen.scss */
 .contactUs .ourRoleDetail {
   font-size: 1em;
 }
-/* line 519, ../sass/screen.scss */
+/* line 520, ../sass/screen.scss */
 .contactUs .actionButton {
   background-color: #e25b97;
   color: #edeee3;
@@ -647,21 +648,21 @@ hr {
   margin-top: 3rem;
 }
 
-/* line 531, ../sass/screen.scss */
+/* line 532, ../sass/screen.scss */
 .main {
   position: fixed;
   z-index: 96;
   top: 0px;
 }
 @media only screen and (max-width: 40em) {
-  /* line 531, ../sass/screen.scss */
+  /* line 532, ../sass/screen.scss */
   .main {
     position: relative;
     z-index: 0;
   }
 }
 
-/* line 541, ../sass/screen.scss */
+/* line 542, ../sass/screen.scss */
 section {
   margin-bottom: 350px;
   position: relative;
@@ -670,7 +671,7 @@ section {
   padding-top: 1rem;
 }
 @media only screen and (max-width: 40em) {
-  /* line 541, ../sass/screen.scss */
+  /* line 542, ../sass/screen.scss */
   section {
     margin-bottom: 0px;
     margin-top: 0px;
@@ -678,7 +679,7 @@ section {
   }
 }
 
-/* line 554, ../sass/screen.scss */
+/* line 555, ../sass/screen.scss */
 .contactUs {
   position: fixed;
   bottom: 0;
@@ -688,7 +689,7 @@ section {
   z-index: 1;
 }
 @media only screen and (max-width: 40em) {
-  /* line 554, ../sass/screen.scss */
+  /* line 555, ../sass/screen.scss */
   .contactUs {
     position: relative;
     z-index: 0;
