@@ -30,9 +30,9 @@
         <button type="button" class="overlay-close"></button>
         <nav>
           <ul id="">
-            <li data-menuanchor="home"><a href="#home">Home</a></li>
-            <li data-menuanchor="work"><a href="#work">Work</a></li>
-            <li data-menuanchor="contact"><a href="#contact">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a class="fuck" href="#contact" data-target="shit" onclick="return false">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -103,7 +103,7 @@
       <!-- Vetto Work -->
   
       <!-- Vetto Work Intro -->
-      <div class="row">
+      <div class="row" id="vetto">
         <div class="workIntro medium-4 columns small-centered text-center">
           <img class="logo" src="img/vetto-logo.png" alt="">
           <p class="workTitle">VETTO</p>
@@ -209,7 +209,7 @@
     </section>
 
     <!-- Get in Touch -->
-    <div class="contactUs row">
+    <div class="contactUs row" id="shit">
       <div class="medium-6 columns small-centered text-center">
 
         <!-- Get in Touch Text -->
@@ -258,6 +258,18 @@
       if (!isMobile){
         contentOffset()
       };
+
+      // Anchor Points
+
+      $( '.fuck' ).on('click', function(event) {
+        event.preventDefault();
+        var target = "#" + $(this).data('target');
+        $('html, body').animate({
+            scrollTop: $(target).offset().top
+        }, 1000);
+        console.log("anchor points baby!")
+      });
+
     })
 
     </script>
@@ -301,5 +313,7 @@
       }
     });
     </script>
+
+
   </body>
 </html>
