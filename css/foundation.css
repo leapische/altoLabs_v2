@@ -2264,7 +2264,8 @@ div.switch {
 
 .touch .orbit-container .orbit-prev,
 .touch .orbit-container .orbit-next {
-  display: none; }
+  /*EH Change*/
+  display: inherit; }
 .touch .orbit-bullets {
   display: none; }
 

@@ -61,12 +61,6 @@ body {
   	top: 0%;
   	right: 15%;
   }
-
-  // @media #{$iphone} {
-  //   top: -45%;
-  //   right: 20%;
-  // }
-
 }
 .si-icons span {
   display: inline-block;
@@ -103,7 +97,7 @@ svg{
   height: 100%;
   top: 0;
   left: 0;
-  background: rgba( 226, 91, 151, .95 );
+  background: rgba( 226, 91, 151, .90 );
   font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
 	text-transform: uppercase;
@@ -144,7 +138,7 @@ svg{
   height: 100%;
   position: relative;
   width:100%;
-  top: -10%;
+  // top: -10%;
 }
 
 .overlay ul li {
@@ -152,6 +146,10 @@ svg{
   height: 20%;
   height: calc(100% / 5);
   min-height: 54px;
+  &:hover{
+  	background: white;
+  	color: $altoBrown;
+  }
 
 }
 
@@ -161,11 +159,12 @@ svg{
   color: #fff;
   -webkit-transition: color 0.2s;
   transition: color 0.2s;
+  line-height: 4.5rem;
 }
 
 .overlay ul li a:hover,
 .overlay ul li a:focus {
-  color: #e3fcb1;
+  color: $altoBrown;
 }
 
 /* Effects */
@@ -212,6 +211,7 @@ svg{
   .overlay nav {
     height: 70%;
     font-size: 34px;
+    margin-top: 15%;
   }
   .overlay ul li {
     min-height: 34px;
@@ -248,6 +248,8 @@ svg{
 			margin-bottom: 3.4rem;
 			@media only screen and (max-width: 40em){
 				margin-bottom: 1.5rem;
+				font-size: 2.75em;
+				line-height: 3rem;
 			}
 
 		}
@@ -308,7 +310,7 @@ svg{
   position: relative;
   padding: .4rem; /* Arrow size */
   box-shadow: 1px -1px 0 1px $altoBrown inset;
-  -webkit-box-shadow: 2px -2px $altoBrown inset;
+  -webkit-box-shadow: 1px -1px $altoBrown inset;
   border: solid transparent;
   border-width: 0 0 0rem 0rem;
   transition: 0.2s;
@@ -328,8 +330,14 @@ svg{
 	.logo {
 		width: 8%;
 		@media only screen and (max-width: 40em){
-				width: 10%;
+				width: 9%;
 			}
+	}
+
+	#vettoLogo{
+		@media only screen and (max-width: 40em){
+			width: 7%;
+		}
 	}
 }
 
@@ -486,6 +494,7 @@ margin: 0 auto;
 	}
 	.arrowSuperContainer{
 		margin-top: 1rem;
+		margin-bottom: 1rem;
 	}
 	.arrow{
 		box-shadow: 1px -1px 0 1px $altoCream inset;
