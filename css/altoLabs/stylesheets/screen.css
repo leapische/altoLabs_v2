@@ -547,30 +547,30 @@ hr {
   margin-top: 3rem;
   padding: 1rem;
 }
-/* line 445, ../sass/screen.scss */
+/* line 442, ../sass/screen.scss */
 .ourProcess hr {
   border: solid #edeee3;
   width: 10%;
   border-width: 2px 0 0;
   margin: 1rem auto 0rem;
 }
-/* line 451, ../sass/screen.scss */
+/* line 448, ../sass/screen.scss */
 .ourProcess img {
   width: 8%;
   margin-top: 3rem;
 }
 @media only screen and (max-width: 40em) {
-  /* line 451, ../sass/screen.scss */
+  /* line 448, ../sass/screen.scss */
   .ourProcess img {
     width: 16%;
   }
 }
-/* line 459, ../sass/screen.scss */
+/* line 456, ../sass/screen.scss */
 .ourProcess .workTitle {
   color: #edeee3;
   letter-spacing: 1px;
 }
-/* line 463, ../sass/screen.scss */
+/* line 460, ../sass/screen.scss */
 .ourProcess .subheader {
   margin-top: 1rem;
   color: #edeee3;
@@ -578,52 +578,52 @@ hr {
   font-weight: 400;
   letter-spacing: 1px;
 }
-/* line 470, ../sass/screen.scss */
+/* line 467, ../sass/screen.scss */
 .ourProcess .arrowText {
   margin-top: 3rem;
   color: #edeee3;
   letter-spacing: 1px;
 }
-/* line 475, ../sass/screen.scss */
+/* line 472, ../sass/screen.scss */
 .ourProcess .arrowSuperContainer {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
-/* line 479, ../sass/screen.scss */
+/* line 476, ../sass/screen.scss */
 .ourProcess .arrow {
   box-shadow: 1px -1px 0 1px #edeee3 inset;
   -webkit-box-shadow: 2px -2px #edeee3 inset;
 }
-/* line 483, ../sass/screen.scss */
+/* line 480, ../sass/screen.scss */
 .ourProcess .bottomArrowContainer {
   margin-top: -1.4rem;
 }
 
-/* line 488, ../sass/screen.scss */
+/* line 485, ../sass/screen.scss */
 .featuredIn {
   padding-top: 3rem;
   padding-bottom: 3rem;
   background: white;
 }
-/* line 492, ../sass/screen.scss */
+/* line 489, ../sass/screen.scss */
 .featuredIn .prLogo {
   margin-top: 3rem;
   vertical-align: middle;
 }
 
-/* line 499, ../sass/screen.scss */
+/* line 496, ../sass/screen.scss */
 .contactUs {
   padding-top: 3rem;
 }
-/* line 502, ../sass/screen.scss */
+/* line 499, ../sass/screen.scss */
 .contactUs p {
   margin-top: 3rem;
 }
-/* line 506, ../sass/screen.scss */
+/* line 503, ../sass/screen.scss */
 .contactUs .ourRoleDetail {
   font-size: 1em;
 }
-/* line 509, ../sass/screen.scss */
+/* line 506, ../sass/screen.scss */
 .contactUs .actionButton {
   background-color: #e25b97;
   color: #edeee3;
@@ -640,7 +640,7 @@ hr {
   z-index: 96;
   top: 0px;
 }
-@media only screen and (max-width: 40em) {
+@media only screen and (max-width: 64em) {
   /* line 521, ../sass/screen.scss */
   .main {
     position: relative;
@@ -656,7 +656,7 @@ section {
   background-color: #edeee3;
   padding-top: 1rem;
 }
-@media only screen and (max-width: 40em) {
+@media only screen and (max-width: 64em) {
   /* line 531, ../sass/screen.scss */
   section {
     margin-bottom: 0px;
@@ -674,7 +674,7 @@ section {
   height: 400px;
   z-index: 1;
 }
-@media only screen and (max-width: 40em) {
+@media only screen and (max-width: 64em) {
   /* line 544, ../sass/screen.scss */
   .contactUs {
     position: relative;
