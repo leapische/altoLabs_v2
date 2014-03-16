@@ -41,7 +41,7 @@ body {
 	background-color: $altoCream;
 }
 
-// Animated Cross Menu
+// Menu Icon
 
 #menu{
   position: fixed;
@@ -61,25 +61,20 @@ body {
   	top: 0%;
   	right: 15%;
   }
-}
-.si-icons span {
-  display: inline-block;
-  width: 64px;
-  height: 64px;
-  margin: 40px 30px;
-  cursor: pointer;
-  background-repeat: no-repeat;
-  background-position: center center;
-  margin-top: 1rem;
-  margin-left: 92%;
-  position: relative;
-  z-index: 400001;
-}
 
-.si-icons-hover span {
-  width: 128px;
-  height: 128px;
-  margin: 50px 40px;
+  span {
+	  display: inline-block;
+	  width: 64px;
+	  height: 64px;
+	  margin: 40px 30px;
+	  cursor: pointer;
+	  background-repeat: no-repeat;
+	  background-position: center center;
+	  margin-top: 1rem;
+	  margin-left: 92%;
+	  position: relative;
+	  z-index: 400001;
+	}
 }
 
 svg{
@@ -101,71 +96,52 @@ svg{
   font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
 	text-transform: uppercase;
+
+	/* Overlay closing cross */
+	.overlay-close {
+		position: absolute;
+	  width: 100%;
+	  height: 80px;
+	  top: 6%;
+	  overflow: hidden;
+	  border: none;
+	  background: no-repeat center center;
+	  text-indent: 200%;
+	  color: transparent;
+	  outline: none;
+	  z-index: 1000000000000000000000;
+	}
+	/* Menu style */
+	nav {
+	  text-align: center;
+	  position: relative;
+	  top: 50%;
+	  height: 60%;
+	  font-size: 54px;
+	  -webkit-transform: translateY(-50%);
+	  transform: translateY(-50%);
+	  ul{
+	  	li{
+	  		display: block;
+			  height: 20%;
+			  &:hover{
+			  	background: white;
+			  	a{
+			  		color: $altoBrown
+			  	}
+			  }	
+			  a {
+				  display: block;
+				  color: #fff;
+				  -webkit-transition: color 0.2s;
+				  transition: color 0.2s;
+				  line-height: 4.5rem;
+				}
+	  	}
+	  }
+	}
 }
 
-/* Overlay closing cross */
-.overlay .overlay-close {
-  width: 100%;
-  height: 80px;
-  position: absolute;
-  // right: 7%;
-  top: 6%;
-  overflow: hidden;
-  border: none;
-  background: no-repeat center center;
-  text-indent: 200%;
-  color: transparent;
-  outline: none;
-  z-index: 1000000000000000000000;
-}
-
-/* Menu style */
-.overlay nav {
-  text-align: center;
-  position: relative;
-  top: 50%;
-  height: 60%;
-  font-size: 54px;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-.overlay ul {
-  list-style: none;
-  padding: 0;
-  margin: 0 auto;
-  display: inline-block;
-  height: 100%;
-  position: relative;
-  width:100%;
-  // top: -10%;
-}
-
-.overlay ul li {
-  display: block;
-  height: 20%;
-  height: calc(100% / 5);
-  min-height: 54px;
-  &:hover{
-  	background: white;
-  	color: $altoBrown;
-  }
-
-}
-
-.overlay ul li a {
-  font-weight: 300;
-  display: block;
-  color: #fff;
-  -webkit-transition: color 0.2s;
-  transition: color 0.2s;
-  line-height: 4.5rem;
-}
-
-.overlay ul li a:hover,
-.overlay ul li a:focus {
-  color: $altoBrown;
-}
 
 /* Effects */
 .overlay-hugeinc {
@@ -218,13 +194,17 @@ svg{
   }
 }
 
+@mixin background($url, $position){
+	background-image: $url;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: $position;
+}
+
 .main{
 	width: 100%;
 	height: 100%;
-	background-image: url('../../../img/background.png');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: right center;
+	@include background(url('../../../img/background.png'), right center);
 	padding: 1rem;
 
 	.mainText {
