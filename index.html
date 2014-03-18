@@ -45,7 +45,7 @@
 
         <!-- Main Panel Text -->
         <strike>
-          <h1 class="mainTitle">We believe in organic and gluten-free design and code...</h1>
+          <h1 class="mainTitle">We believe in organic and raw design and code...</h1>
         </strike>
 
         <p class="tagLine">Yeah, we can do that</p>
@@ -58,7 +58,9 @@
     <section>
       <div class="section2 text-center">
           <!-- Second Panel Text -->
+          <img class="altoLogo" src="img/logo.png" alt="">
           <div class="section2Text small-centered medium-5 small-10 columns">
+
             We are Alto Labs. We help companies develop their brands and build <span>beautiful websites.</span>
         </div>
   
@@ -86,7 +88,7 @@
       </div>
       <!-- RO Screenshots -->
       <div class="row">
-        <div class="workScreenShots medium-10 columns small-centered text-center">
+        <div class="workScreenShots medium-10 columns small-centered text-center roScreenshots">
           <ul class="workScreenShots" data-orbit>
             <li>
               <img src="img/screen-1.png" alt="slide 1" />
@@ -158,12 +160,12 @@
           <div class="medium-3 small-6 columns text-center">
             <img src="img/pencil.png" alt="">
             <p class="workTitle">DESIGN</p>
-            <h6 class="subheader show-for-medium-up">All our designs are "mobile-first." We prioritize usability and efficiency above all else.</h6>
+            <h6 class="subheader show-for-medium-up">We look beyond pixels. Our designs prioritize usability and efficiency above all else.</h6>
           </div>
           <div class="medium-3 small-6 columns text-center">
             <img src="img/ruby.png" alt="">
             <p class="workTitle">CODE</p>
-            <h6 class="subheader show-for-medium-up">We speak Ruby on Rails, Android, Python, Django, PHP, AngularJS, Java, and more...</h6>
+            <h6 class="subheader show-for-medium-up">We speak Ruby on Rails, Python, Django, PHP, AngularJS, Java, and more...</h6>
           </div>
         </div>
         
@@ -246,13 +248,12 @@
     <script src="js/classie.js"></script>
     <script src="js/demo1.js"></script>
 
-    <!-- Test -->
+    <!-- Set margin-top of Section tag so that it is automatically adjusted for each screen -->
     <script>
     function contentOffset() {
         var e = $(window).height();
         $("section").css({
             "margin-top": e,
-            // "margin-bottom": e
         })
     }
     $(document).ready(function () {
@@ -278,6 +279,8 @@
           'position': 'relative',
           'z-index': '0'
         });
+
+        // Scroll to menuItems 
 
         var target = "#" + $(this).data('target');
         $('html, body').animate({

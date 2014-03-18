@@ -42,8 +42,8 @@
 	triggerBttn.addEventListener( 'click', toggleOverlay );
 	closeBttn.addEventListener( 'click', toggleOverlay );
 	$('li').click(function() {
-	  toggleOverlay();
-	  $('.overlay-close').click();
+		$('.overlay-close').click();
 	  $('.si-icon').click();
+	  toggleOverlay();
 	});
 })();

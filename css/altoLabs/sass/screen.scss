@@ -250,8 +250,12 @@ svg{
   color: $altoBrown;
   line-height: 1.5em;
   
+  img{
+  	padding-top: 1rem;
+  	width: 5%;
+  }
   .section2Text{
-		margin-top: 2rem;
+		margin-top: .5rem;
 		margin-bottom: 2rem;
 	
   	span {
@@ -308,10 +312,7 @@ svg{
 	margin-top: 2rem;
 
 	.logo {
-		width: 8%;
-		@media only screen and (max-width: 40em){
-				width: 9%;
-			}
+		width: 9%;
 	}
 
 	#vettoLogo{
@@ -324,7 +325,7 @@ svg{
 .workTitle{
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 400; 
-	font-size: 1.25em;
+	font-size: 1.3em;
 	color: $altoBrown;
 	margin-top: .5rem;
 }
@@ -339,15 +340,15 @@ hr{
 }
 .ourRole{
 	@include playfair_ital;
-	font-size: 1em;
+	font-size: .9em;
 	color: $altoBrown;
 	margin-top: 1rem;
 }
 .ourRoleDetail{
 	font-family: 'Gotham';
 	color: $altoBrown;
-	margin-top: 1rem;
-	font-size: .75em;
+	margin-top: .5rem;
+	font-size: .65em;
 }
 
 
@@ -382,6 +383,20 @@ hr{
     	margin-top: 0px;
     	left: 40%
     }
+}
+
+@media only screen and (max-width: 40em){
+	.roScreenshots{
+		.orbit-container .orbit-prev {
+			visibility: hidden;
+			margin-left: 0px;
+		}
+		.orbit-container .orbit-next {
+			visibility: hidden;
+			margin-right: 0px;
+		}
+
+	}
 }
 .orbit-container .orbit-prev span:before {
     content: "";
@@ -427,9 +442,15 @@ hr{
 		-moz-transform:rotate(225deg);
 		-o-transform:rotate(225deg);
 }
+
+
 // Center images in Orbit slider
 .orbit-slides-container img {
 margin: 0 auto;
+}
+
+.ourProcessIntro{
+	padding-top: 2rem;
 }
 
 .ourProcess{
@@ -448,6 +469,7 @@ margin: 0 auto;
 	img{
 		width: 8%;
 		margin-top: 3rem;
+		margin-bottom: .5rem;
 		// Note that the width on media is twice the width from the regular
 		@media only screen and (max-width: 40em){
 			width: 16%;
@@ -456,13 +478,15 @@ margin: 0 auto;
 	.workTitle{
 		color: $altoCream;
 		letter-spacing: 1px;
+		font-size: 1.6em;
 	}
 	.subheader{
 		margin-top: 1rem;
 		color: $altoCream;
-		font-family: 'Montserrat', sans-serif;
+		font-family: 'Gotham';
 		font-weight: 400;
 		letter-spacing: 1px;
+		font-size: .75em;
 	}
 	.arrowText{
 		margin-top: 3rem;
@@ -489,7 +513,11 @@ margin: 0 auto;
 	.prLogo{
 		margin-top: 3rem;
 		vertical-align: middle;
+		img{
+			height:2rem;
+		}
 	}
+
 
 }
 
@@ -499,6 +527,7 @@ margin: 0 auto;
 	p{
 		margin-top: 3rem;
 		// margin-bottom: 1.5rem;
+		font-size: 1.6em;
 	}
 	.ourRoleDetail{
 		font-size: 1em;
@@ -512,7 +541,6 @@ margin: 0 auto;
 		text-transform: uppercase;
 		margin-top: 3rem;
 	}
-
 }
 
 // Ipad and down media query
@@ -529,7 +557,7 @@ margin: 0 auto;
 }
 
 section{
-	margin-bottom: 350px;
+	margin-bottom: 290px;
   position: relative;
   z-index: 98;
   background-color: $altoCream;
@@ -544,7 +572,6 @@ section{
 .contactUs{
 	position: fixed;
   bottom: 0;
-  // top:0;
   left: 0;
   right: 0;
   height: 400px;
