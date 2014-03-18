@@ -51,7 +51,6 @@ body {
 .si-icons {
   vertical-align: top !important;
   position: relative;
-  // Top has to be a negative number because fullpage.js imposes a vertical-align middle onto the div
   top: 3%;
   right: 7%;
   display: block;
@@ -142,6 +141,16 @@ svg{
 	}
 }
 
+@media screen and (max-height: 30.5em) {
+  .overlay nav {
+    height: 70%;
+    font-size: 34px;
+    margin-top: 15%;
+  }
+  .overlay ul li {
+    min-height: 34px;
+  }
+}
 
 /* Effects */
 .overlay-hugeinc {
@@ -149,6 +158,17 @@ svg{
   visibility: hidden;
   -webkit-transition: opacity 0.5s, visibility 0s 0.5s;
   transition: opacity 0.5s, visibility 0s 0.5s;
+  nav {
+	  -webkit-perspective: 1200px;
+	  perspective: 1200px;
+	  ul {
+		  opacity: 0.4;
+		  -webkit-transform: translateY(-25%) rotateX(35deg);
+		  transform: translateY(-25%) rotateX(35deg);
+		  -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+		  transition: transform 0.5s, opacity 0.5s;
+		}
+	}
 }
 
 .overlay-hugeinc.open {
@@ -157,19 +177,6 @@ svg{
   -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
   z-index: 4000;
-}
-
-.overlay-hugeinc nav {
-  -webkit-perspective: 1200px;
-  perspective: 1200px;
-}
-
-.overlay-hugeinc nav ul {
-  opacity: 0.4;
-  -webkit-transform: translateY(-25%) rotateX(35deg);
-  transform: translateY(-25%) rotateX(35deg);
-  -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
-  transition: transform 0.5s, opacity 0.5s;
 }
 
 .overlay-hugeinc.open nav ul {
@@ -183,16 +190,7 @@ svg{
   transform: translateY(25%) rotateX(-35deg);
 }
 
-@media screen and (max-height: 30.5em) {
-  .overlay nav {
-    height: 70%;
-    font-size: 34px;
-    margin-top: 15%;
-  }
-  .overlay ul li {
-    min-height: 34px;
-  }
-}
+
 
 @mixin background($url, $position){
 	background-image: $url;
@@ -272,14 +270,9 @@ svg{
 	width:100%;
 }
 
-.arrowContainer{
-	margin-top: -.5rem;
-}
+// Double Arrow
 
-.bottomArrowContainer{
-	margin-top: -1.1rem;
-}
-
+// Text above arrow
 .arrowText{
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 400; 
@@ -289,6 +282,17 @@ svg{
 	font-style: italic;
 }
 
+// Container for top arrow
+.arrowContainer{
+	margin-top: -.5rem;
+}
+
+// Container for bottom arrow
+.bottomArrowContainer{
+	margin-top: -1.1rem;
+}
+
+// Actual Arrow
 .arrow {
 	display:inline-block;
   position: relative;
@@ -307,6 +311,7 @@ svg{
 	-moz-transform:rotate(-45deg);
 	-o-transform:rotate(-45deg); 
 }
+// End Actual Arrow
 
 .workIntro{
 	margin-top: 2rem;
@@ -385,6 +390,7 @@ hr{
     }
 }
 
+// Hides the arrows on the RO screenshots when on mobile
 @media only screen and (max-width: 40em){
 	.roScreenshots{
 		.orbit-container .orbit-prev {
