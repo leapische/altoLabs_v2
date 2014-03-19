@@ -211,8 +211,8 @@ svg{
 
 		.mainTitle {
 			@include playfair_ital;
-			font-size: 1.5em;
-			color: rgb( 121, 117, 103 );
+			font-size: 1.3em;
+			color: rgb( 123, 118, 99 );
 			margin-bottom: 1.5rem;
 		}
 		strike {
@@ -239,6 +239,9 @@ svg{
 	  		font-family: 'Montserrat', sans-serif;
 	  		font-weight: 700;
 	  		text-transform: uppercase;
+	  		&:hover{
+	  			background-color: rgb( 200, 67, 126 );
+	  		};
 		}
 	}
 }
@@ -251,11 +254,11 @@ svg{
   
   img{
   	padding-top: 1rem;
-  	width: 5%;
+  	width: 6%;
   }
   .section2Text{
-		margin-top: .5rem;
-		margin-bottom: 2rem;
+		margin-top: 1rem;
+		margin-bottom: 3rem;
 	
   	span {
 	  	color: $altoPink;
@@ -275,7 +278,7 @@ svg{
 
 // Text above arrow
 .arrowText{
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Gotham', sans-serif;
 	font-weight: 400; 
 	font-size: .70em;
 	color: $altoBrown;
@@ -297,11 +300,10 @@ svg{
 .arrow {
 	display:inline-block;
   position: relative;
-  padding: .4rem; /* Arrow size */
+  padding: .25rem; /* Arrow size */
   box-shadow: 1px -1px 0 1px $altoBrown inset;
   -webkit-box-shadow: 1px -1px $altoBrown inset;
   border: solid transparent;
-  border-width: 0 0 0rem 0rem;
   transition: 0.2s;
   margin: 0 auto;
 }
@@ -338,7 +340,7 @@ svg{
 .workTitle{
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 400; 
-	font-size: 1.3em;
+	font-size: 1.2em;
 	color: $altoBrown;
 	margin-top: .5rem;
 }
@@ -356,6 +358,7 @@ hr{
 	font-size: .9em;
 	color: $altoBrown;
 	margin-top: 1rem;
+	letter-spacing: .2px;
 }
 .ourRoleDetail{
 	font-family: 'Gotham';
@@ -558,6 +561,16 @@ margin: 0 auto;
 		font-weight: 700;
 		text-transform: uppercase;
 		margin-top: 3rem;
+		&:hover{
+  			background-color: $altoCream;
+  			color: $altoPink;
+  			border: 2px solid #e25b97;
+  			text-decoration: none;
+  			a{
+  				color: $altoPink;
+  			}
+
+  		};
 	}
 }
 
@@ -600,4 +613,21 @@ section{
   }
 }
 
-
+footer{
+	.copyright{
+		color: $altoBrown;
+		font-family: 'Gotham';
+		font-size: .7em;
+		float: left;
+		margin-top: 1.45rem;
+	}
+	.icon-container{
+		float: right;
+		margin-top: .45rem;
+	}
+	img{
+		width: 2.2em;
+		height: auto;
+		margin-top: .6rem;
+	}
+}
