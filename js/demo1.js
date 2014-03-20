@@ -41,10 +41,10 @@
 
 	triggerBttn.addEventListener( 'click', toggleOverlay );
 	closeBttn.addEventListener( 'click', toggleOverlay );
-	$('li').click(function() {
+	$('li').on('click', function() {
 		$('.si-icon')[0].click();
 		$('.overlay-close').click();
 	  toggleOverlay();
-	  console.log("Edwin said Shit")
+	  console.log("FUUUCK")
 	});
 })();

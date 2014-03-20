@@ -60,7 +60,8 @@
 		// state
 		this.toggled = false;
 		// click event (if mobile use touchstart)
-		this.clickevent = mobilecheck() ? 'touchstart' : 'click';
+		// EH changed touchstart to 'click'
+		this.clickevent = mobilecheck() ? 'click' : 'click';
 		// icons configuration
 		this.config = config[ this.el.getAttribute( 'data-icon-name' ) ];
 		// reverse?
