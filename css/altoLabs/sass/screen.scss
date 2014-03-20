@@ -255,6 +255,9 @@ svg{
   img{
   	padding-top: 1rem;
   	width: 6%;
+  	@media only screen{
+  		width: 10%;
+  	}
   }
   .section2Text{
 		margin-top: 1rem;
@@ -343,6 +346,9 @@ svg{
 	font-size: 1.2em;
 	color: $altoBrown;
 	margin-top: .5rem;
+	@media only screen{
+		font-size: 1em;
+	}
 }
 
 hr{
@@ -531,11 +537,21 @@ margin: 0 auto;
 	padding-top: 3rem;
 	padding-bottom: 3rem;
 	background: white;
+	@media only screen{
+		padding-top: 2rem;
+		padding-bottom: 1.5rem;
+	}
 	.prLogo{
 		margin-top: 3rem;
 		vertical-align: middle;
+		@media only screen{
+			margin-top: 2.2rem;
+		}
 		img{
 			height:2rem;
+			@media only screen{
+				margin-bottom: 1.5rem;
+			}
 		}
 	}
 
@@ -545,6 +561,11 @@ margin: 0 auto;
 .contactUs{
 	padding-top: 3rem;
 	// padding-bottom: 3rem;
+	@media only screen{
+		padding-bottom: 1.5rem;
+		padding-top: 0rem;
+		height: 150px;
+	}
 	p{
 		margin-top: 3rem;
 		// margin-bottom: 1.5rem;

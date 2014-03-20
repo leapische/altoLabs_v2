@@ -2,8 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-@import url(../foundation.css);
-/* line 17, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -313,12 +312,11 @@ svg {
   font-weight: 700;
   text-transform: uppercase;
 }
-/* line 242, ../sass/screen.scss */
+/* line 241, ../sass/screen.scss */
 .main .mainText .actionButton:hover {
   background-color: #c8437e;
 }
 
-/* line 248, ../sass/screen.scss */
 .section2 {
   font-size: 1em;
   font-family: 'Montserrat', sans-serif;
@@ -326,34 +324,26 @@ svg {
   color: #595548;
   line-height: 1.5em;
 }
-/* line 255, ../sass/screen.scss */
+
 .section2 img {
   padding-top: 1rem;
   width: 6%;
 }
-@media only screen {
-  /* line 255, ../sass/screen.scss */
-  .section2 img {
-    width: 10%;
-  }
-}
-/* line 262, ../sass/screen.scss */
+
 .section2 .section2Text {
   margin-top: 1rem;
   margin-bottom: 3rem;
 }
-/* line 266, ../sass/screen.scss */
+
 .section2 .section2Text span {
   color: #e25b97;
   font-size: 1em;
 }
 
-/* line 276, ../sass/screen.scss */
 .bottomArrowContainer, .arrowContainer {
   width: 100%;
 }
 
-/* line 283, ../sass/screen.scss */
 .arrowText {
   font-family: 'Gotham', sans-serif;
   font-weight: 400;
@@ -363,17 +353,14 @@ svg {
   font-style: italic;
 }
 
-/* line 293, ../sass/screen.scss */
 .arrowContainer {
   margin-top: -.5rem;
 }
 
-/* line 298, ../sass/screen.scss */
 .bottomArrowContainer {
   margin-top: -1.1rem;
 }
 
-/* line 303, ../sass/screen.scss */
 .arrow {
   display: inline-block;
   position: relative;
@@ -386,7 +373,6 @@ svg {
   margin: 0 auto;
 }
 
-/* line 314, ../sass/screen.scss */
 .arrow-down {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
@@ -394,34 +380,40 @@ svg {
   -o-transform: rotate(-45deg);
 }
 
-/* line 322, ../sass/screen.scss */
+
+/* line 318, ../sass/screen.scss */
 .workIntro {
   margin-top: 2rem;
 }
-/* line 325, ../sass/screen.scss */
+/* line 321, ../sass/screen.scss */
+
 .workIntro .logo {
   width: 9%;
 }
 @media only screen and (orientation: landscape) {
-  /* line 325, ../sass/screen.scss */
+  /* line 320, ../sass/screen.scss */
   .workIntro .logo {
     width: 5%;
   }
 }
 @media only screen and (max-width: 40em) {
-  /* line 333, ../sass/screen.scss */
+
+  /* line 325, ../sass/screen.scss */
+
   .workIntro #vettoLogo {
     width: 7%;
   }
 }
 @media only screen and (orientation: landscape) {
-  /* line 333, ../sass/screen.scss */
+  /* line 328, ../sass/screen.scss */
   .workIntro #vettoLogo {
     width: 5%;
   }
 }
 
-/* line 343, ../sass/screen.scss */
+
+/* line 332, ../sass/screen.scss */
+
 .workTitle {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
@@ -429,14 +421,8 @@ svg {
   color: #595548;
   margin-top: .5rem;
 }
-@media only screen {
-  /* line 343, ../sass/screen.scss */
-  .workTitle {
-    font-size: 1em;
-  }
-}
 
-/* line 354, ../sass/screen.scss */
+
 hr {
   width: 10%;
   border: solid #595548;
@@ -444,7 +430,7 @@ hr {
   margin: 1rem auto 0rem;
 }
 
-/* line 362, ../sass/screen.scss */
+
 .ourRole {
   font-family: 'Playfair Display', serif;
   font-weight: 400;
@@ -455,7 +441,7 @@ hr {
   letter-spacing: .2px;
 }
 
-/* line 369, ../sass/screen.scss */
+
 .ourRoleDetail {
   font-family: 'Gotham';
   color: #595548;
@@ -463,22 +449,22 @@ hr {
   font-size: .65em;
 }
 
-/* line 377, ../sass/screen.scss */
+
 .workScreenShots {
   margin-top: 2.5rem;
 }
 
-/* line 382, ../sass/screen.scss */
+
 .orbit-container {
   overflow: visible !important;
 }
 
-/* line 385, ../sass/screen.scss */
+
 .orbit-slides-container {
   overflow: hidden !important;
 }
 
-/* line 390, ../sass/screen.scss */
+
 .orbit-container .orbit-prev span,
 .orbit-container .orbit-next span {
   border: none;
@@ -487,35 +473,36 @@ hr {
   margin-top: -32px;
 }
 
-/* line 397, ../sass/screen.scss */
 .orbit-container .orbit-prev {
   background-color: transparent;
   margin-left: -50px;
   top: 50%;
 }
-/* line 401, ../sass/screen.scss */
+
+/* line 387, ../sass/screen.scss */
 .orbit-container .orbit-prev:hover {
   background: transparent;
 }
-/* line 404, ../sass/screen.scss */
+/* line 390, ../sass/screen.scss */
+
 .orbit-container .orbit-prev span {
   margin-top: 0px;
   left: 40%;
 }
 
 @media only screen and (max-width: 40em) {
-  /* line 413, ../sass/screen.scss */
+
   .roScreenshots .orbit-container .orbit-prev {
     visibility: hidden;
     margin-left: 0px;
   }
-  /* line 417, ../sass/screen.scss */
+
   .roScreenshots .orbit-container .orbit-next {
     visibility: hidden;
     margin-right: 0px;
   }
 }
-/* line 424, ../sass/screen.scss */
+
 .orbit-container .orbit-prev span:before {
   content: "";
   display: block;
@@ -534,23 +521,24 @@ hr {
   -o-transform: rotate(45deg);
 }
 
-/* line 440, ../sass/screen.scss */
+
 .orbit-container .orbit-next {
   background-color: transparent;
   margin-right: -50px;
   top: 50%;
 }
-/* line 444, ../sass/screen.scss */
+
+/* line 430, ../sass/screen.scss */
 .orbit-container .orbit-next:hover {
   background: transparent;
 }
-/* line 447, ../sass/screen.scss */
+/* line 433, ../sass/screen.scss */
+
 .orbit-container .orbit-next span {
   margin-top: 0px;
   right: 40%;
 }
 
-/* line 452, ../sass/screen.scss */
 .orbit-container .orbit-next span:before {
   content: "";
   display: block;
@@ -569,17 +557,16 @@ hr {
   -o-transform: rotate(225deg);
 }
 
-/* line 471, ../sass/screen.scss */
+
 .orbit-slides-container img {
   margin: 0 auto;
 }
 
-/* line 475, ../sass/screen.scss */
+
 .ourProcessIntro {
   padding-top: 2rem;
 }
 
-/* line 479, ../sass/screen.scss */
 .ourProcess {
   width: 100%;
   height: auto;
@@ -590,38 +577,36 @@ hr {
   margin-top: 3rem;
   padding: 1rem;
 }
-/* line 486, ../sass/screen.scss */
 .ourProcess hr {
   border: solid #edeee3;
   width: 10%;
   border-width: 2px 0 0;
   margin: 1rem auto 0rem;
 }
-/* line 492, ../sass/screen.scss */
 .ourProcess img {
   width: 8%;
   margin-top: 3rem;
   margin-bottom: .5rem;
 }
 @media only screen and (max-width: 40em) {
-  /* line 492, ../sass/screen.scss */
   .ourProcess img {
     width: 16%;
   }
 }
+
 @media only screen and (orientation: landscape) {
-  /* line 492, ../sass/screen.scss */
+  /* line 483, ../sass/screen.scss */
   .ourProcess img {
     width: 10%;
   }
 }
-/* line 505, ../sass/screen.scss */
+/* line 496, ../sass/screen.scss */
+/* line 487, ../sass/screen.scss */
 .ourProcess .workTitle {
   color: #edeee3;
   letter-spacing: 1px;
   font-size: 1.6em;
 }
-/* line 510, ../sass/screen.scss */
 .ourProcess .subheader {
   margin-top: 1rem;
   color: #edeee3;
@@ -630,84 +615,48 @@ hr {
   letter-spacing: 1px;
   font-size: .75em;
 }
-/* line 518, ../sass/screen.scss */
 .ourProcess .arrowText {
   margin-top: 3rem;
   color: #edeee3;
   letter-spacing: 1px;
 }
-/* line 523, ../sass/screen.scss */
 .ourProcess .arrowSuperContainer {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
-/* line 527, ../sass/screen.scss */
 .ourProcess .arrow {
   box-shadow: 1px -1px 0 1px #edeee3 inset;
   -webkit-box-shadow: 2px -2px #edeee3 inset;
 }
-/* line 531, ../sass/screen.scss */
 .ourProcess .bottomArrowContainer {
   margin-top: -1.4rem;
 }
-
-/* line 536, ../sass/screen.scss */
 .featuredIn {
   padding-top: 3rem;
   padding-bottom: 3rem;
   background: white;
 }
-@media only screen {
-  /* line 536, ../sass/screen.scss */
-  .featuredIn {
-    padding-top: 2rem;
-    padding-bottom: 1.5rem;
-  }
-}
-/* line 544, ../sass/screen.scss */
 .featuredIn .prLogo {
   margin-top: 3rem;
   vertical-align: middle;
 }
-@media only screen {
-  /* line 544, ../sass/screen.scss */
-  .featuredIn .prLogo {
-    margin-top: 2.2rem;
-  }
-}
-/* line 550, ../sass/screen.scss */
 .featuredIn .prLogo img {
   height: 2rem;
 }
-@media only screen {
-  /* line 550, ../sass/screen.scss */
-  .featuredIn .prLogo img {
-    margin-bottom: 1.5rem;
-  }
-}
-
-/* line 561, ../sass/screen.scss */
+/* line 533, ../sass/screen.scss */
 .contactUs {
   padding-top: 3rem;
 }
-@media only screen {
-  /* line 561, ../sass/screen.scss */
-  .contactUs {
-    padding-bottom: 1.5rem;
-    padding-top: 0rem;
-    height: 150px;
-  }
-}
-/* line 569, ../sass/screen.scss */
+/* line 536, ../sass/screen.scss */
 .contactUs p {
   margin-top: 3rem;
   font-size: 1.6em;
 }
-/* line 574, ../sass/screen.scss */
+/* line 541, ../sass/screen.scss */
 .contactUs .ourRoleDetail {
   font-size: 1em;
 }
-/* line 577, ../sass/screen.scss */
+/* line 544, ../sass/screen.scss */
 .contactUs .actionButton {
   background-color: #e25b97;
   color: #edeee3;
@@ -717,33 +666,30 @@ hr {
   text-transform: uppercase;
   margin-top: 3rem;
 }
-/* line 585, ../sass/screen.scss */
+/* line 552, ../sass/screen.scss */
 .contactUs .actionButton:hover {
   background-color: #edeee3;
   color: #e25b97;
   border: 2px solid #e25b97;
   text-decoration: none;
 }
-/* line 590, ../sass/screen.scss */
+/* line 557, ../sass/screen.scss */
 .contactUs .actionButton:hover a {
   color: #e25b97;
 }
 
-/* line 601, ../sass/screen.scss */
 .main {
   position: fixed;
   z-index: 96;
   top: 0px;
 }
 @media only screen and (max-width: 64em) {
-  /* line 601, ../sass/screen.scss */
   .main {
     position: relative;
     z-index: 0;
   }
 }
 
-/* line 611, ../sass/screen.scss */
 section {
   margin-bottom: 290px;
   position: relative;
@@ -752,15 +698,12 @@ section {
   padding-top: 1rem;
 }
 @media only screen and (max-width: 64em) {
-  /* line 611, ../sass/screen.scss */
   section {
     margin-bottom: 0px;
     margin-top: 0px;
     z-index: 0;
   }
 }
-
-/* line 624, ../sass/screen.scss */
 .contactUs {
   position: fixed;
   bottom: 0;
@@ -770,14 +713,13 @@ section {
   z-index: 1;
 }
 @media only screen and (max-width: 64em) {
-  /* line 624, ../sass/screen.scss */
   .contactUs {
     position: relative;
     z-index: 0;
   }
 }
 
-/* line 638, ../sass/screen.scss */
+/* line 605, ../sass/screen.scss */
 footer .copyright {
   color: #595548;
   font-family: 'Gotham';
@@ -785,12 +727,12 @@ footer .copyright {
   float: left;
   margin-top: 1.45rem;
 }
-/* line 645, ../sass/screen.scss */
+/* line 612, ../sass/screen.scss */
 footer .icon-container {
   float: right;
   margin-top: .45rem;
 }
-/* line 649, ../sass/screen.scss */
+/* line 616, ../sass/screen.scss */
 footer img {
   width: 2.2em;
   height: auto;

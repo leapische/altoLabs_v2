@@ -3,7 +3,11 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 @import url(../foundation.css);
+<<<<<<< HEAD
+/* line 17, ../../../../../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+=======
 /* line 17, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+>>>>>>> lea/mobileDetails
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -25,45 +29,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -331,6 +335,9 @@ svg {
   padding-top: 1rem;
   width: 6%;
 }
+<<<<<<< HEAD
+/* line 259, ../sass/screen.scss */
+=======
 @media only screen {
   /* line 255, ../sass/screen.scss */
   .section2 img {
@@ -338,22 +345,35 @@ svg {
   }
 }
 /* line 262, ../sass/screen.scss */
+>>>>>>> lea/mobileDetails
 .section2 .section2Text {
   margin-top: 1rem;
   margin-bottom: 3rem;
 }
+<<<<<<< HEAD
+/* line 263, ../sass/screen.scss */
+=======
 /* line 266, ../sass/screen.scss */
+>>>>>>> lea/mobileDetails
 .section2 .section2Text span {
   color: #e25b97;
   font-size: 1em;
 }
 
+<<<<<<< HEAD
+/* line 273, ../sass/screen.scss */
+=======
 /* line 276, ../sass/screen.scss */
+>>>>>>> lea/mobileDetails
 .bottomArrowContainer, .arrowContainer {
   width: 100%;
 }
 
+<<<<<<< HEAD
+/* line 280, ../sass/screen.scss */
+=======
 /* line 283, ../sass/screen.scss */
+>>>>>>> lea/mobileDetails
 .arrowText {
   font-family: 'Gotham', sans-serif;
   font-weight: 400;
@@ -363,17 +383,29 @@ svg {
   font-style: italic;
 }
 
+<<<<<<< HEAD
+/* line 290, ../sass/screen.scss */
+=======
 /* line 293, ../sass/screen.scss */
+>>>>>>> lea/mobileDetails
 .arrowContainer {
   margin-top: -.5rem;
 }
 
+<<<<<<< HEAD
+/* line 295, ../sass/screen.scss */
+=======
 /* line 298, ../sass/screen.scss */
+>>>>>>> lea/mobileDetails
 .bottomArrowContainer {
   margin-top: -1.1rem;
 }
 
+<<<<<<< HEAD
+/* line 300, ../sass/screen.scss */
+=======
 /* line 303, ../sass/screen.scss */
+>>>>>>> lea/mobileDetails
 .arrow {
   display: inline-block;
   position: relative;
@@ -386,7 +418,11 @@ svg {
   margin: 0 auto;
 }
 
+<<<<<<< HEAD
+/* line 311, ../sass/screen.scss */
+=======
 /* line 314, ../sass/screen.scss */
+>>>>>>> lea/mobileDetails
 .arrow-down {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
@@ -394,34 +430,58 @@ svg {
   -o-transform: rotate(-45deg);
 }
 
+<<<<<<< HEAD
+/* line 319, ../sass/screen.scss */
+.workIntro {
+  margin-top: 2rem;
+}
+/* line 322, ../sass/screen.scss */
+=======
 /* line 322, ../sass/screen.scss */
 .workIntro {
   margin-top: 2rem;
 }
 /* line 325, ../sass/screen.scss */
+>>>>>>> lea/mobileDetails
 .workIntro .logo {
   width: 9%;
 }
 @media only screen and (orientation: landscape) {
+<<<<<<< HEAD
+  /* line 322, ../sass/screen.scss */
+=======
   /* line 325, ../sass/screen.scss */
+>>>>>>> lea/mobileDetails
   .workIntro .logo {
-    width: 5%;
+    width: 9%;
   }
 }
 @media only screen and (max-width: 40em) {
+<<<<<<< HEAD
+  /* line 330, ../sass/screen.scss */
+=======
   /* line 333, ../sass/screen.scss */
+>>>>>>> lea/mobileDetails
   .workIntro #vettoLogo {
     width: 7%;
   }
 }
 @media only screen and (orientation: landscape) {
+<<<<<<< HEAD
+  /* line 330, ../sass/screen.scss */
+=======
   /* line 333, ../sass/screen.scss */
+>>>>>>> lea/mobileDetails
   .workIntro #vettoLogo {
-    width: 5%;
+    width: 7%;
   }
 }
 
+<<<<<<< HEAD
+/* line 340, ../sass/screen.scss */
+=======
 /* line 343, ../sass/screen.scss */
+>>>>>>> lea/mobileDetails
 .workTitle {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
@@ -436,7 +496,11 @@ svg {
   }
 }
 
+<<<<<<< HEAD
+/* line 348, ../sass/screen.scss */
+=======
 /* line 354, ../sass/screen.scss */
+>>>>>>> lea/mobileDetails
 hr {
   width: 10%;
   border: solid #595548;
@@ -444,7 +508,11 @@ hr {
   margin: 1rem auto 0rem;
 }
 
+<<<<<<< HEAD
+/* line 356, ../sass/screen.scss */
+=======
 /* line 362, ../sass/screen.scss */
+>>>>>>> lea/mobileDetails
 .ourRole {
   font-family: 'Playfair Display', serif;
   font-weight: 400;
@@ -455,7 +523,11 @@ hr {
   letter-spacing: .2px;
 }
 
+<<<<<<< HEAD
+/* line 363, ../sass/screen.scss */
+=======
 /* line 369, ../sass/screen.scss */
+>>>>>>> lea/mobileDetails
 .ourRoleDetail {
   font-family: 'Gotham';
   color: #595548;
@@ -463,22 +535,38 @@ hr {
   font-size: .65em;
 }
 
+<<<<<<< HEAD
+/* line 371, ../sass/screen.scss */
+=======
 /* line 377, ../sass/screen.scss */
+>>>>>>> lea/mobileDetails
 .workScreenShots {
   margin-top: 2.5rem;
 }
 
+<<<<<<< HEAD
+/* line 376, ../sass/screen.scss */
+=======
 /* line 382, ../sass/screen.scss */
+>>>>>>> lea/mobileDetails
 .orbit-container {
   overflow: visible !important;
 }
 
+<<<<<<< HEAD
+/* line 379, ../sass/screen.scss */
+=======
 /* line 385, ../sass/screen.scss */
+>>>>>>> lea/mobileDetails
 .orbit-slides-container {
   overflow: hidden !important;
 }
 
+<<<<<<< HEAD
+/* line 384, ../sass/screen.scss */
+=======
 /* line 390, ../sass/screen.scss */
+>>>>>>> lea/mobileDetails
 .orbit-container .orbit-prev span,
 .orbit-container .orbit-next span {
   border: none;
@@ -487,35 +575,59 @@ hr {
   margin-top: -32px;
 }
 
+<<<<<<< HEAD
+/* line 391, ../sass/screen.scss */
+=======
 /* line 397, ../sass/screen.scss */
+>>>>>>> lea/mobileDetails
 .orbit-container .orbit-prev {
   background-color: transparent;
   margin-left: -50px;
   top: 50%;
 }
+<<<<<<< HEAD
+/* line 395, ../sass/screen.scss */
+.orbit-container .orbit-prev:hover {
+  background: transparent;
+}
+/* line 398, ../sass/screen.scss */
+=======
 /* line 401, ../sass/screen.scss */
 .orbit-container .orbit-prev:hover {
   background: transparent;
 }
 /* line 404, ../sass/screen.scss */
+>>>>>>> lea/mobileDetails
 .orbit-container .orbit-prev span {
   margin-top: 0px;
   left: 40%;
 }
 
 @media only screen and (max-width: 40em) {
+<<<<<<< HEAD
+  /* line 407, ../sass/screen.scss */
+=======
   /* line 413, ../sass/screen.scss */
+>>>>>>> lea/mobileDetails
   .roScreenshots .orbit-container .orbit-prev {
     visibility: hidden;
     margin-left: 0px;
   }
+<<<<<<< HEAD
+  /* line 411, ../sass/screen.scss */
+=======
   /* line 417, ../sass/screen.scss */
+>>>>>>> lea/mobileDetails
   .roScreenshots .orbit-container .orbit-next {
     visibility: hidden;
     margin-right: 0px;
   }
 }
+<<<<<<< HEAD
+/* line 418, ../sass/screen.scss */
+=======
 /* line 424, ../sass/screen.scss */
+>>>>>>> lea/mobileDetails
 .orbit-container .orbit-prev span:before {
   content: "";
   display: block;
@@ -534,23 +646,39 @@ hr {
   -o-transform: rotate(45deg);
 }
 
+<<<<<<< HEAD
+/* line 434, ../sass/screen.scss */
+=======
 /* line 440, ../sass/screen.scss */
+>>>>>>> lea/mobileDetails
 .orbit-container .orbit-next {
   background-color: transparent;
   margin-right: -50px;
   top: 50%;
 }
+<<<<<<< HEAD
+/* line 438, ../sass/screen.scss */
+.orbit-container .orbit-next:hover {
+  background: transparent;
+}
+/* line 441, ../sass/screen.scss */
+=======
 /* line 444, ../sass/screen.scss */
 .orbit-container .orbit-next:hover {
   background: transparent;
 }
 /* line 447, ../sass/screen.scss */
+>>>>>>> lea/mobileDetails
 .orbit-container .orbit-next span {
   margin-top: 0px;
   right: 40%;
 }
 
+<<<<<<< HEAD
+/* line 446, ../sass/screen.scss */
+=======
 /* line 452, ../sass/screen.scss */
+>>>>>>> lea/mobileDetails
 .orbit-container .orbit-next span:before {
   content: "";
   display: block;
@@ -569,17 +697,29 @@ hr {
   -o-transform: rotate(225deg);
 }
 
+<<<<<<< HEAD
+/* line 465, ../sass/screen.scss */
+=======
 /* line 471, ../sass/screen.scss */
+>>>>>>> lea/mobileDetails
 .orbit-slides-container img {
   margin: 0 auto;
 }
 
+<<<<<<< HEAD
+/* line 469, ../sass/screen.scss */
+=======
 /* line 475, ../sass/screen.scss */
+>>>>>>> lea/mobileDetails
 .ourProcessIntro {
   padding-top: 2rem;
 }
 
+<<<<<<< HEAD
+/* line 473, ../sass/screen.scss */
+=======
 /* line 479, ../sass/screen.scss */
+>>>>>>> lea/mobileDetails
 .ourProcess {
   width: 100%;
   height: auto;
@@ -590,38 +730,62 @@ hr {
   margin-top: 3rem;
   padding: 1rem;
 }
+<<<<<<< HEAD
+/* line 480, ../sass/screen.scss */
+=======
 /* line 486, ../sass/screen.scss */
+>>>>>>> lea/mobileDetails
 .ourProcess hr {
   border: solid #edeee3;
   width: 10%;
   border-width: 2px 0 0;
   margin: 1rem auto 0rem;
 }
+<<<<<<< HEAD
+/* line 486, ../sass/screen.scss */
+=======
 /* line 492, ../sass/screen.scss */
+>>>>>>> lea/mobileDetails
 .ourProcess img {
   width: 8%;
   margin-top: 3rem;
   margin-bottom: .5rem;
 }
 @media only screen and (max-width: 40em) {
+<<<<<<< HEAD
+  /* line 486, ../sass/screen.scss */
+=======
   /* line 492, ../sass/screen.scss */
+>>>>>>> lea/mobileDetails
   .ourProcess img {
     width: 16%;
   }
 }
 @media only screen and (orientation: landscape) {
+<<<<<<< HEAD
+  /* line 486, ../sass/screen.scss */
+=======
   /* line 492, ../sass/screen.scss */
+>>>>>>> lea/mobileDetails
   .ourProcess img {
-    width: 10%;
+    width: 5%;
   }
 }
+<<<<<<< HEAD
+/* line 499, ../sass/screen.scss */
+=======
 /* line 505, ../sass/screen.scss */
+>>>>>>> lea/mobileDetails
 .ourProcess .workTitle {
   color: #edeee3;
   letter-spacing: 1px;
   font-size: 1.6em;
 }
+<<<<<<< HEAD
+/* line 504, ../sass/screen.scss */
+=======
 /* line 510, ../sass/screen.scss */
+>>>>>>> lea/mobileDetails
 .ourProcess .subheader {
   margin-top: 1rem;
   color: #edeee3;
@@ -630,33 +794,56 @@ hr {
   letter-spacing: 1px;
   font-size: .75em;
 }
+<<<<<<< HEAD
+/* line 512, ../sass/screen.scss */
+=======
 /* line 518, ../sass/screen.scss */
+>>>>>>> lea/mobileDetails
 .ourProcess .arrowText {
   margin-top: 3rem;
   color: #edeee3;
   letter-spacing: 1px;
 }
+<<<<<<< HEAD
+/* line 517, ../sass/screen.scss */
+=======
 /* line 523, ../sass/screen.scss */
+>>>>>>> lea/mobileDetails
 .ourProcess .arrowSuperContainer {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
+<<<<<<< HEAD
+/* line 521, ../sass/screen.scss */
+=======
 /* line 527, ../sass/screen.scss */
+>>>>>>> lea/mobileDetails
 .ourProcess .arrow {
   box-shadow: 1px -1px 0 1px #edeee3 inset;
   -webkit-box-shadow: 2px -2px #edeee3 inset;
 }
+<<<<<<< HEAD
+/* line 525, ../sass/screen.scss */
+=======
 /* line 531, ../sass/screen.scss */
+>>>>>>> lea/mobileDetails
 .ourProcess .bottomArrowContainer {
   margin-top: -1.4rem;
 }
 
+<<<<<<< HEAD
+/* line 530, ../sass/screen.scss */
+=======
 /* line 536, ../sass/screen.scss */
+>>>>>>> lea/mobileDetails
 .featuredIn {
   padding-top: 3rem;
   padding-bottom: 3rem;
   background: white;
 }
+<<<<<<< HEAD
+/* line 534, ../sass/screen.scss */
+=======
 @media only screen {
   /* line 536, ../sass/screen.scss */
   .featuredIn {
@@ -665,10 +852,23 @@ hr {
   }
 }
 /* line 544, ../sass/screen.scss */
+>>>>>>> lea/mobileDetails
 .featuredIn .prLogo {
   margin-top: 3rem;
   vertical-align: middle;
 }
+<<<<<<< HEAD
+/* line 537, ../sass/screen.scss */
+.featuredIn .prLogo img {
+  height: 2rem;
+}
+
+/* line 545, ../sass/screen.scss */
+.contactUs {
+  padding-top: 3rem;
+}
+/* line 548, ../sass/screen.scss */
+=======
 @media only screen {
   /* line 544, ../sass/screen.scss */
   .featuredIn .prLogo {
@@ -699,15 +899,24 @@ hr {
   }
 }
 /* line 569, ../sass/screen.scss */
+>>>>>>> lea/mobileDetails
 .contactUs p {
   margin-top: 3rem;
   font-size: 1.6em;
 }
+<<<<<<< HEAD
+/* line 553, ../sass/screen.scss */
+.contactUs .ourRoleDetail {
+  font-size: 1em;
+}
+/* line 556, ../sass/screen.scss */
+=======
 /* line 574, ../sass/screen.scss */
 .contactUs .ourRoleDetail {
   font-size: 1em;
 }
 /* line 577, ../sass/screen.scss */
+>>>>>>> lea/mobileDetails
 .contactUs .actionButton {
   background-color: #e25b97;
   color: #edeee3;
@@ -717,33 +926,53 @@ hr {
   text-transform: uppercase;
   margin-top: 3rem;
 }
+<<<<<<< HEAD
+/* line 564, ../sass/screen.scss */
+=======
 /* line 585, ../sass/screen.scss */
+>>>>>>> lea/mobileDetails
 .contactUs .actionButton:hover {
   background-color: #edeee3;
   color: #e25b97;
   border: 2px solid #e25b97;
   text-decoration: none;
 }
+<<<<<<< HEAD
+/* line 569, ../sass/screen.scss */
+=======
 /* line 590, ../sass/screen.scss */
+>>>>>>> lea/mobileDetails
 .contactUs .actionButton:hover a {
   color: #e25b97;
 }
 
+<<<<<<< HEAD
+/* line 580, ../sass/screen.scss */
+=======
 /* line 601, ../sass/screen.scss */
+>>>>>>> lea/mobileDetails
 .main {
   position: fixed;
   z-index: 96;
   top: 0px;
 }
 @media only screen and (max-width: 64em) {
+<<<<<<< HEAD
+  /* line 580, ../sass/screen.scss */
+=======
   /* line 601, ../sass/screen.scss */
+>>>>>>> lea/mobileDetails
   .main {
     position: relative;
     z-index: 0;
   }
 }
 
+<<<<<<< HEAD
+/* line 590, ../sass/screen.scss */
+=======
 /* line 611, ../sass/screen.scss */
+>>>>>>> lea/mobileDetails
 section {
   margin-bottom: 290px;
   position: relative;
@@ -752,7 +981,11 @@ section {
   padding-top: 1rem;
 }
 @media only screen and (max-width: 64em) {
+<<<<<<< HEAD
+  /* line 590, ../sass/screen.scss */
+=======
   /* line 611, ../sass/screen.scss */
+>>>>>>> lea/mobileDetails
   section {
     margin-bottom: 0px;
     margin-top: 0px;
@@ -760,7 +993,11 @@ section {
   }
 }
 
+<<<<<<< HEAD
+/* line 603, ../sass/screen.scss */
+=======
 /* line 624, ../sass/screen.scss */
+>>>>>>> lea/mobileDetails
 .contactUs {
   position: fixed;
   bottom: 0;
@@ -770,14 +1007,22 @@ section {
   z-index: 1;
 }
 @media only screen and (max-width: 64em) {
+<<<<<<< HEAD
+  /* line 603, ../sass/screen.scss */
+=======
   /* line 624, ../sass/screen.scss */
+>>>>>>> lea/mobileDetails
   .contactUs {
     position: relative;
     z-index: 0;
   }
 }
 
+<<<<<<< HEAD
+/* line 617, ../sass/screen.scss */
+=======
 /* line 638, ../sass/screen.scss */
+>>>>>>> lea/mobileDetails
 footer .copyright {
   color: #595548;
   font-family: 'Gotham';
@@ -785,12 +1030,20 @@ footer .copyright {
   float: left;
   margin-top: 1.45rem;
 }
+<<<<<<< HEAD
+/* line 624, ../sass/screen.scss */
+=======
 /* line 645, ../sass/screen.scss */
+>>>>>>> lea/mobileDetails
 footer .icon-container {
   float: right;
   margin-top: .45rem;
 }
+<<<<<<< HEAD
+/* line 628, ../sass/screen.scss */
+=======
 /* line 649, ../sass/screen.scss */
+>>>>>>> lea/mobileDetails
 footer img {
   width: 2.2em;
   height: auto;
